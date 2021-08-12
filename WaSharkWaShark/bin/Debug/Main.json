@@ -1,0 +1,38 @@
+[
+  {
+        "No": "1",
+        "Time": "Aug  8, 2021 22:12:52.074730000 대한민국 표준시",
+        "SrcIp": "142.250.82.25",
+        "SrcMac": "70:5d:cc:db:08:a8",
+        "SrcDomain": "naver.com",
+        "DesIp": "192.168.0.15",
+        "DesMac": "2c:8d:b1:e8:1b:92",
+        "DesDomain": "daum.net",
+        "Length": "81",
+        "URL": "https://meet.google.com/hma-fsoa-nvs?authuser=0"  
+  },
+  {
+        "No": "2",
+        "Time": "Aug  9, 2021 22:12:52.074730000 대한민국 표준시",
+        "SrcIp": "142.250.82.25",
+        "SrcMac": "70:5d:cc:db:08:a8",
+        "SrcDomain": "naver.com",
+        "DesIp": "192.168.0.15",
+        "DesMac": "2c:8d:b1:e8:1b:92",
+        "DesDomain": "daum.net",
+        "Length": "87",
+        "URL": "https://meet.google.com/hma-fsoa-nvs?authuser=0"  
+  },
+  {
+        "No": "3",
+        "Time": "Aug  11, 2021 22:12:52.074730000 대한민국 표준시",
+        "SrcIp": "142.250.82.25",
+        "SrcMac": "70:5d:cc:db:08:a8",
+        "SrcDomain": "naver.com",
+        "DesIp": "192.168.0.15",
+        "DesMac": "2c:8d:b1:e8:1b:92",
+        "DesDomain": "daum.net",
+        "Length": "89",
+        "URL": "https://meet.google.com/hma-fsoa-nvs?authuser=0"  
+  }
+]
