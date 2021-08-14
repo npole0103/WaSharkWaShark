@@ -33,6 +33,7 @@
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.sfd = new System.Windows.Forms.SaveFileDialog();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtLog
@@ -60,7 +61,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(502, 12);
+            this.btnSave.Location = new System.Drawing.Point(363, 12);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(254, 32);
             this.btnSave.TabIndex = 2;
@@ -68,11 +69,22 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(634, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(122, 32);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(768, 551);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.txtLog);
@@ -91,5 +103,6 @@
         private System.Windows.Forms.OpenFileDialog ofd;
         private System.Windows.Forms.SaveFileDialog sfd;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExit;
     }
 }

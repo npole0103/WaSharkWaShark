@@ -22,7 +22,6 @@ namespace WaSharkWaShark
             InitializeComponent();
             InitializeFileDialog();
         }
-
         private void InitializeFileDialog()
         {
             ofd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -32,6 +31,12 @@ namespace WaSharkWaShark
             sfd.InitialDirectory = ofd.InitialDirectory;
             sfd.Filter = ofd.Filter;
             sfd.FileName = "*.json";
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            f1 = (Form1)Owner;
+            f1.SendInfo += new Form1.MyEventHandler(updateInfo);
         }
 
         //json 파일 저장 메소드
@@ -51,12 +56,6 @@ namespace WaSharkWaShark
             }
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            f1 = (Form1)Owner;
-            f1.SendInfo += new Form1.MyEventHandler(updateInfo);
-        }
-
         void updateInfo(string title, string content)
         {
             lblText.Text = title;
@@ -66,6 +65,11 @@ namespace WaSharkWaShark
         private void btnSave_Click(object sender, EventArgs e)
         {
             saveJsonFile(txtLog.Text);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

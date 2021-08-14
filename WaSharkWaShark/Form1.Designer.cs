@@ -176,6 +176,7 @@
             // JsonView
             // 
             this.JsonView.Text = "JsonView";
+            this.JsonView.Width = 0;
             // 
             // btnExtract
             // 
@@ -213,7 +214,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(149, 49);
             this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Save as Json";
+            this.btnSave.Text = "Follow Stream\r\nSave as Json";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 

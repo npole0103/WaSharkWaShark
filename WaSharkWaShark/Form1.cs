@@ -82,7 +82,7 @@ namespace WaSharkWaShark
                 JArray json = (JArray)JToken.ReadFrom(reader);
                 Console.WriteLine(json);
 
-                txtDialog.AppendText(json.ToString()); //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                //txtDialog.AppendText(json.ToString()); //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
                 PacketInfo pi = new PacketInfo();
 
@@ -111,22 +111,12 @@ namespace WaSharkWaShark
             }
         }
 
-        //save as json
+        //Save as json
         private void btnSave_Click(object sender, EventArgs e)
         {
             if(lvwPacket.SelectedItems.Count != 0)
             {
-                int selectRow = lvwPacket.SelectedItems[0].Index;
-
-                string no = lvwPacket.Items[selectRow].SubItems[0].Text;
-                string time = lvwPacket.Items[selectRow].SubItems[1].Text;
-
-                txtDialog.AppendText("\r\n");
-
-                txtDialog.AppendText(no + "\r\n");
-                txtDialog.AppendText(time + "\r\n");
-
-                saveJsonFile(time);
+                saveJsonFile(txtDialog.Text);
             }
             else
             {
@@ -141,20 +131,21 @@ namespace WaSharkWaShark
         //대화형식 표시
         private void lvwPacket_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //txtDialog 초기화
+            txtDialog.Clear();
+
             if (lvwPacket.SelectedItems.Count != 0)
             {
                 int selectRow = lvwPacket.SelectedItems[0].Index;
 
-                string no = lvwPacket.Items[selectRow].SubItems[0].Text;
-                string time = lvwPacket.Items[selectRow].SubItems[1].Text;
-
-                txtDialog.AppendText("\r\n");
+                string rawPacket = lvwPacket.Items[selectRow].SubItems[10].Text;
+                string jsonView = lvwPacket.Items[selectRow].SubItems[11].Text;
 
                 txtDialog.SelectionColor = Color.Red;
-                txtDialog.AppendText(no + "\r\n");
+                txtDialog.AppendText(rawPacket + "\r\n");
 
                 txtDialog.SelectionColor = Color.Blue;
-                txtDialog.AppendText(time + "\r\n");
+                txtDialog.AppendText(jsonView + "\r\n");
 
                 //richTextBox 자동 스크롤 설정
                 txtDialog.Select(txtDialog.Text.Length, 0);
@@ -162,7 +153,7 @@ namespace WaSharkWaShark
             }
         }
 
-        //json 파일 저장 메소드
+        //json 파일 저장 함수
         public void saveJsonFile(string jsonView)
         {
             if(sfd.ShowDialog() == DialogResult.OK)
