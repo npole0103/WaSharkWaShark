@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Diagnostics; //Process
+using System.Text;
 
 namespace WaSharkWaShark
 {
@@ -56,7 +57,7 @@ namespace WaSharkWaShark
             public string desDomain;
 
             public string length;
-            public string url;
+            public string uri;
 
             public string rawPacket;
             public string jsonView;
@@ -72,43 +73,95 @@ namespace WaSharkWaShark
             //Process -> Json
             //Python 코드 완성되면 적용하기
 
-            string jsonPath = @"Main.json";
+            string epPath = "extractPacket.py";
             ListViewItem listItem = new ListViewItem();
 
-            using (StreamReader file = File.OpenText(jsonPath))
-            using (JsonTextReader reader = new JsonTextReader(file))
+            ProcessStartInfo start = new ProcessStartInfo();
+            start.FileName = "python.exe";
+            start.Arguments = string.Format("{0}", epPath);
+            start.UseShellExecute = false;
+            start.RedirectStandardOutput = true;
+            start.RedirectStandardError = true;
+            start.RedirectStandardInput = true;
+            start.StandardOutputEncoding = Encoding.Default;
+            start.StandardErrorEncoding = Encoding.Default;
+            using (Process process = Process.Start(start))
             {
-                //JObject json = (JObject)JToken.ReadFrom(reader);
-                JArray json = (JArray)JToken.ReadFrom(reader);
-                Console.WriteLine(json);
-
-                //txtDialog.AppendText(json.ToString()); //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-                PacketInfo pi = new PacketInfo();
-
-                for(int i = 0; i < json.Count; i++)
+                Console.WriteLine(process.StandardOutput);
+                using (StreamReader reader = process.StandardOutput)
                 {
-                    pi.no = json[i]["No"].ToString();
-                    pi.time = json[i]["Time"].ToString();
+                    string result = reader.ReadToEnd();
+                    //Console.WriteLine(result);
+                    txtDialog.Text += result;
 
-                    pi.srcIp = json[i]["SrcIp"].ToString();
-                    pi.srcMac = json[i]["SrcMac"].ToString();
-                    pi.srcDomain = json[i]["SrcDomain"].ToString();
+                    JArray json = (JArray)JToken.Parse(result);
+                    Console.Write(json);
 
-                    pi.desIp = json[i]["DesIp"].ToString();
-                    pi.desMac = json[i]["DesMac"].ToString();
-                    pi.desDomain = json[i]["DesDomain"].ToString();
+                    PacketInfo pi = new PacketInfo();
 
-                    pi.length = json[i]["Length"].ToString();
-                    pi.url = json[i]["URL"].ToString();
+                    for (int i = 0; i < json.Count; i++)
+                    {
+                        pi.no = json[i]["No"].ToString();
+                        pi.time = json[i]["Time"].ToString();
 
-                    pi.rawPacket = "01:20:30:40:50:60";
-                    pi.jsonView = json.ToString();
+                        pi.srcIp = json[i]["SrcIp"].ToString();
+                        pi.srcMac = json[i]["SrcMac"].ToString();
+                        pi.srcDomain = json[i]["SrcDomain"].ToString();
 
-                    listItem = new ListViewItem(new String[] {pi.no, pi.time, pi.srcIp, pi.srcMac, pi.srcDomain, pi.desIp, pi.desMac, pi.desDomain, pi.length, pi.url, pi.rawPacket, pi.jsonView});
-                    lvwPacket.Items.Add(listItem);
+                        pi.desIp = json[i]["DesIp"].ToString();
+                        pi.desMac = json[i]["DesMac"].ToString();
+                        pi.desDomain = json[i]["DesDomain"].ToString();
+
+                        pi.length = json[i]["Length"].ToString();
+                        pi.uri = json[i]["URI"].ToString();
+
+                        pi.rawPacket = json[i]["RawPacket"].ToString();
+                        pi.jsonView = json[i]["JsonView"].ToString();
+
+                        listItem = new ListViewItem(new String[] { pi.no, pi.time, pi.srcIp, pi.srcMac, pi.srcDomain, pi.desIp, pi.desMac, pi.desDomain, pi.length, pi.uri, pi.rawPacket, pi.jsonView });
+                        lvwPacket.Items.Add(listItem);
+                    }
+                    reader.Close();
                 }
             }
+
+            //string jsonPath = @"Main.json";
+            //ListViewItem listItem = new ListViewItem();
+
+            //using (StreamReader file = File.OpenText(jsonPath))
+            //using (JsonTextReader reader = new JsonTextReader(file))
+            //{
+            //    //JObject json = (JObject)JToken.ReadFrom(reader);
+            //    JArray json = (JArray)JToken.ReadFrom(reader);
+            //    Console.WriteLine(json);
+
+            //    //txtDialog.AppendText(json.ToString()); //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+            //    PacketInfo pi = new PacketInfo();
+
+            //    for(int i = 0; i < json.Count; i++)
+            //    {
+            //        pi.no = json[i]["No"].ToString();
+            //        pi.time = json[i]["Time"].ToString();
+
+            //        pi.srcIp = json[i]["SrcIp"].ToString();
+            //        pi.srcMac = json[i]["SrcMac"].ToString();
+            //        pi.srcDomain = json[i]["SrcDomain"].ToString();
+
+            //        pi.desIp = json[i]["DesIp"].ToString();
+            //        pi.desMac = json[i]["DesMac"].ToString();
+            //        pi.desDomain = json[i]["DesDomain"].ToString();
+
+            //        pi.length = json[i]["Length"].ToString();
+            //        pi.url = json[i]["URI"].ToString();
+
+            //        pi.rawPacket = json[i]["RawPacket"].ToString();
+            //        pi.jsonView = json[i]["JsonView"].ToString();
+
+            //        listItem = new ListViewItem(new String[] {pi.no, pi.time, pi.srcIp, pi.srcMac, pi.srcDomain, pi.desIp, pi.desMac, pi.desDomain, pi.length, pi.url, pi.rawPacket, pi.jsonView});
+            //        lvwPacket.Items.Add(listItem);
+            //    }
+            // }
         }
 
         //Save as json
@@ -175,8 +228,12 @@ namespace WaSharkWaShark
         {
             if (lvwPacket.SelectedItems.Count != 0)
             {
-                int selectRow = lvwPacket.SelectedItems[0].Index;
-                string rawPacket = lvwPacket.Items[selectRow].SubItems[10].Text;
+                int selectRow = lvwPacket.SelectedItems[0].Index + 1;
+                Console.WriteLine(selectRow);
+
+                StreamReader SR = new StreamReader($"RawPacket/{selectRow}.txt");
+                string rawPacket = SR.ReadToEnd();
+                SR.Close();
 
                 //Modaless 형식으로 Form2 생성
                 Form2 f2 = new Form2();
@@ -201,8 +258,12 @@ namespace WaSharkWaShark
         {
             if (lvwPacket.SelectedItems.Count != 0)
             {
-                int selectRow = lvwPacket.SelectedItems[0].Index;
-                string jsonView = lvwPacket.Items[selectRow].SubItems[11].Text;
+                int selectRow = lvwPacket.SelectedItems[0].Index + 1;
+                Console.WriteLine(selectRow);
+
+                StreamReader SR = new StreamReader($"JsonView/{selectRow}.txt");
+                string jsonView = SR.ReadToEnd();
+                SR.Close();
 
                 //Modaless 형식으로 Form2 생성
                 Form2 f2 = new Form2();

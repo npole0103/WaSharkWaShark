@@ -43,7 +43,7 @@
             this.DesMac = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DesDomain = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Length = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.URL = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.URI = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.RawPacket = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.JsonView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnExtract = new System.Windows.Forms.Button();
@@ -108,7 +108,7 @@
             this.DesMac,
             this.DesDomain,
             this.Length,
-            this.URL,
+            this.URI,
             this.RawPacket,
             this.JsonView});
             this.lvwPacket.HideSelection = false;
@@ -163,10 +163,10 @@
             // 
             this.Length.Text = "Length";
             // 
-            // URL
+            // URI
             // 
-            this.URL.Text = "URL";
-            this.URL.Width = 300;
+            this.URI.Text = "URI";
+            this.URI.Width = 300;
             // 
             // RawPacket
             // 
@@ -276,7 +276,7 @@
         private System.Windows.Forms.ColumnHeader DesIp;
         private System.Windows.Forms.ColumnHeader DesDomain;
         private System.Windows.Forms.ColumnHeader Length;
-        private System.Windows.Forms.ColumnHeader URL;
+        private System.Windows.Forms.ColumnHeader URI;
         private System.Windows.Forms.Button btnExtract;
         private System.Windows.Forms.Button btnJsonView;
         private System.Windows.Forms.Button btnHexView;

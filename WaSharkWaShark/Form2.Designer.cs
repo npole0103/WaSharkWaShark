@@ -41,10 +41,11 @@
             this.txtLog.Location = new System.Drawing.Point(23, 50);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
-            this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtLog.Size = new System.Drawing.Size(733, 458);
             this.txtLog.TabIndex = 0;
-            this.txtLog.WordWrap = false;
+            this.txtLog.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblText
             // 
