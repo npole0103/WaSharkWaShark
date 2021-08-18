@@ -1,1 +1,173 @@
-{'_index': 'packets-2021-08-15', '_type': 'doc', '_score': None, '_source': {'layers': {'frame': {'frame.interface_id': '0', 'frame.interface_id_tree': {'frame.interface_name': '\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}', 'frame.interface_description': 'Wi-Fi'}, 'frame.encap_type': '1', 'frame.time': 'Aug 15, 2021 22:06:31.960860000 대한민국 표준시', 'frame.offset_shift': '0.000000000', 'frame.time_epoch': '1629032791.960860000', 'frame.time_delta': '0.000000000', 'frame.time_delta_displayed': '0.004388000', 'frame.time_relative': '69.852017000', 'frame.number': '15909', 'frame.len': '747', 'frame.cap_len': '747', 'frame.marked': '0', 'frame.ignored': '0', 'frame.protocols': 'eth:ethertype:ip:tcp:http:data-text-lines'}, 'eth': {'eth.dst': '2c:8d:b1:e8:1b:92', 'eth.dst_tree': {'eth.dst_resolved': 'IntelCor_e8:1b:92', 'eth.dst.oui': '2919857', 'eth.dst.oui_resolved': 'Intel Corporate', 'eth.addr': '2c:8d:b1:e8:1b:92', 'eth.addr_resolved': 'IntelCor_e8:1b:92', 'eth.addr.oui': '2919857', 'eth.addr.oui_resolved': 'Intel Corporate', 'eth.dst.lg': '0', 'eth.lg': '0', 'eth.dst.ig': '0', 'eth.ig': '0'}, 'eth.src': '70:5d:cc:db:08:a8', 'eth.src_tree': {'eth.src_resolved': 'EFMNetwo_db:08:a8', 'eth.src.oui': '7364044', 'eth.src.oui_resolved': 'EFM Networks', 'eth.addr': '70:5d:cc:db:08:a8', 'eth.addr_resolved': 'EFMNetwo_db:08:a8', 'eth.addr.oui': '7364044', 'eth.addr.oui_resolved': 'EFM Networks', 'eth.src.lg': '0', 'eth.lg': '0', 'eth.src.ig': '0', 'eth.ig': '0'}, 'eth.type': '0x00000800'}, 'ip': {'ip.version': '4', 'ip.hdr_len': '20', 'ip.dsfield': '0x00000000', 'ip.dsfield_tree': {'ip.dsfield.dscp': '0', 'ip.dsfield.ecn': '0'}, 'ip.len': '733', 'ip.id': '0x0000710a', 'ip.flags': '0x00000040', 'ip.flags_tree': {'ip.flags.rb': '0', 'ip.flags.df': '1', 'ip.flags.mf': '0'}, 'ip.frag_offset': '0', 'ip.ttl': '43', 'ip.proto': '6', 'ip.checksum': '0x000038e9', 'ip.checksum.status': '2', 'ip.src': '27.101.199.11', 'ip.addr': '192.168.0.15', 'ip.src_host': '27.101.199.11', 'ip.host': '192.168.0.15', 'ip.dst': '192.168.0.15', 'ip.dst_host': '192.168.0.15'}, 'tcp': {'tcp.srcport': '80', 'tcp.dstport': '55884', 'tcp.port': '55884', 'tcp.stream': '197', 'tcp.len': '693', 'tcp.seq': '13795', 'tcp.seq_raw': '1925377344', 'tcp.nxtseq': '14488', 'tcp.ack': '928', 'tcp.ack_raw': '2666289732', 'tcp.hdr_len': '20', 'tcp.flags': '0x00000018', 'tcp.flags_tree': {'tcp.flags.res': '0', 'tcp.flags.ns': '0', 'tcp.flags.cwr': '0', 'tcp.flags.ecn': '0', 'tcp.flags.urg': '0', 'tcp.flags.ack': '1', 'tcp.flags.push': '1', 'tcp.flags.reset': '0', 'tcp.flags.syn': '0', 'tcp.flags.fin': '0', 'tcp.flags.str': '·······AP···'}, 'tcp.window_size_value': '65535', 'tcp.window_size': '65535', 'tcp.window_size_scalefactor': '-2', 'tcp.checksum': '0x00003036', 'tcp.checksum.status': '2', 'tcp.urgent_pointer': '0', 'tcp.analysis': {'tcp.analysis.initial_rtt': '0.029173000', 'tcp.analysis.bytes_in_flight': '2153', 'tcp.analysis.push_bytes_sent': '2153'}, 'Timestamps': {'tcp.time_relative': '0.246629000', 'tcp.time_delta': '0.000000000'}, 'tcp.payload': '7a:2d:66:6f:63:75:73:2d:69:6e:6e:65:72:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:7b:6c:69:6e:65:2d:68:65:69:67:68:74:3a:6e:6f:72:6d:61:6c:7d:69:6e:70:75:74:5b:74:79:70:65:3d:63:68:65:63:6b:62:6f:78:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:72:61:64:69:6f:5d:7b:62:6f:78:2d:73:69:7a:69:6e:67:3a:62:6f:72:64:65:72:2d:62:6f:78:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:69:6e:6e:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:6f:75:74:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:7b:68:65:69:67:68:74:3a:61:75:74:6f:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:74:65:78:74:66:69:65:6c:64:3b:2d:6d:6f:7a:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:2d:77:65:62:6b:69:74:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:63:61:6e:63:65:6c:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:64:65:63:6f:72:61:74:69:6f:6e:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:6e:6f:6e:65:7d:66:69:65:6c:64:73:65:74:7b:62:6f:72:64:65:72:3a:31:70:78:20:73:6f:6c:69:64:20:73:69:6c:76:65:72:3b:6d:61:72:67:69:6e:3a:30:20:32:70:78:3b:70:61:64:64:69:6e:67:3a:2e:33:35:65:6d:20:2e:36:32:35:65:6d:20:2e:37:35:65:6d:7d:6c:65:67:65:6e:64:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:74:65:78:74:61:72:65:61:7b:6f:76:65:72:66:6c:6f:77:3a:61:75:74:6f:7d:6f:70:74:67:72:6f:75:70:7b:66:6f:6e:74:2d:77:65:69:67:68:74:3a:37:30:30:7d:74:61:62:6c:65:7b:62:6f:72:64:65:72:2d:63:6f:6c:6c:61:70:73:65:3a:63:6f:6c:6c:61:70:73:65:3b:62:6f:72:64:65:72:2d:73:70:61:63:69:6e:67:3a:30:7d:74:64:2c:74:68:7b:70:61:64:64:69:6e:67:3a:30:7d', 'tcp.segment_data': '7a:2d:66:6f:63:75:73:2d:69:6e:6e:65:72:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:7b:6c:69:6e:65:2d:68:65:69:67:68:74:3a:6e:6f:72:6d:61:6c:7d:69:6e:70:75:74:5b:74:79:70:65:3d:63:68:65:63:6b:62:6f:78:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:72:61:64:69:6f:5d:7b:62:6f:78:2d:73:69:7a:69:6e:67:3a:62:6f:72:64:65:72:2d:62:6f:78:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:69:6e:6e:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:6f:75:74:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:7b:68:65:69:67:68:74:3a:61:75:74:6f:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:74:65:78:74:66:69:65:6c:64:3b:2d:6d:6f:7a:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:2d:77:65:62:6b:69:74:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:63:61:6e:63:65:6c:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:64:65:63:6f:72:61:74:69:6f:6e:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:6e:6f:6e:65:7d:66:69:65:6c:64:73:65:74:7b:62:6f:72:64:65:72:3a:31:70:78:20:73:6f:6c:69:64:20:73:69:6c:76:65:72:3b:6d:61:72:67:69:6e:3a:30:20:32:70:78:3b:70:61:64:64:69:6e:67:3a:2e:33:35:65:6d:20:2e:36:32:35:65:6d:20:2e:37:35:65:6d:7d:6c:65:67:65:6e:64:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:74:65:78:74:61:72:65:61:7b:6f:76:65:72:66:6c:6f:77:3a:61:75:74:6f:7d:6f:70:74:67:72:6f:75:70:7b:66:6f:6e:74:2d:77:65:69:67:68:74:3a:37:30:30:7d:74:61:62:6c:65:7b:62:6f:72:64:65:72:2d:63:6f:6c:6c:61:70:73:65:3a:63:6f:6c:6c:61:70:73:65:3b:62:6f:72:64:65:72:2d:73:70:61:63:69:6e:67:3a:30:7d:74:64:2c:74:68:7b:70:61:64:64:69:6e:67:3a:30:7d'}, 'tcp.segments': {'tcp.segment': '15909', 'tcp.segment.count': '2', 'tcp.reassembled.length': '2153', 'tcp.reassembled.data': '48:54:54:50:2f:31:2e:31:20:32:30:30:20:4f:4b:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:36:3a:33:31:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:74:65:78:74:2f:63:73:73:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:4b:65:65:70:2d:41:6c:69:76:65:0d:0a:4c:61:73:74:2d:4d:6f:64:69:66:69:65:64:3a:20:54:75:65:2c:20:31:33:20:41:70:72:20:32:30:32:31:20:30:38:3a:35:33:3a:34:38:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:39:38:31:0d:0a:0d:0a:2f:2a:21:20:6e:6f:72:6d:61:6c:69:7a:65:2e:63:73:73:20:76:33:2e:30:2e:32:20:7c:20:4d:49:54:20:4c:69:63:65:6e:73:65:20:7c:20:67:69:74:2e:69:6f:2f:6e:6f:72:6d:61:6c:69:7a:65:20:2a:2f:68:74:6d:6c:7b:66:6f:6e:74:2d:66:61:6d:69:6c:79:3a:73:61:6e:73:2d:73:65:72:69:66:3b:2d:6d:73:2d:74:65:78:74:2d:73:69:7a:65:2d:61:64:6a:75:73:74:3a:31:30:30:25:3b:2d:77:65:62:6b:69:74:2d:74:65:78:74:2d:73:69:7a:65:2d:61:64:6a:75:73:74:3a:31:30:30:25:7d:62:6f:64:79:7b:6d:61:72:67:69:6e:3a:30:7d:61:72:74:69:63:6c:65:2c:61:73:69:64:65:2c:64:65:74:61:69:6c:73:2c:66:69:67:63:61:70:74:69:6f:6e:2c:66:69:67:75:72:65:2c:66:6f:6f:74:65:72:2c:68:65:61:64:65:72:2c:68:67:72:6f:75:70:2c:6d:61:69:6e:2c:6d:65:6e:75:2c:6e:61:76:2c:73:65:63:74:69:6f:6e:2c:73:75:6d:6d:61:72:79:7b:64:69:73:70:6c:61:79:3a:62:6c:6f:63:6b:7d:61:75:64:69:6f:2c:63:61:6e:76:61:73:2c:70:72:6f:67:72:65:73:73:2c:76:69:64:65:6f:7b:64:69:73:70:6c:61:79:3a:69:6e:6c:69:6e:65:2d:62:6c:6f:63:6b:3b:76:65:72:74:69:63:61:6c:2d:61:6c:69:67:6e:3a:62:61:73:65:6c:69:6e:65:7d:61:75:64:69:6f:3a:6e:6f:74:28:5b:63:6f:6e:74:72:6f:6c:73:5d:29:7b:64:69:73:70:6c:61:79:3a:6e:6f:6e:65:3b:68:65:69:67:68:74:3a:30:7d:5b:68:69:64:64:65:6e:5d:2c:74:65:6d:70:6c:61:74:65:7b:64:69:73:70:6c:61:79:3a:6e:6f:6e:65:7d:61:7b:62:61:63:6b:67:72:6f:75:6e:64:2d:63:6f:6c:6f:72:3a:74:72:61:6e:73:70:61:72:65:6e:74:7d:61:3a:61:63:74:69:76:65:2c:61:3a:68:6f:76:65:72:7b:6f:75:74:6c:69:6e:65:3a:30:7d:61:62:62:72:5b:74:69:74:6c:65:5d:7b:62:6f:72:64:65:72:2d:62:6f:74:74:6f:6d:3a:31:70:78:20:64:6f:74:74:65:64:7d:62:2c:73:74:72:6f:6e:67:7b:66:6f:6e:74:2d:77:65:69:67:68:74:3a:37:30:30:7d:64:66:6e:7b:66:6f:6e:74:2d:73:74:79:6c:65:3a:69:74:61:6c:69:63:7d:68:31:7b:66:6f:6e:74:2d:73:69:7a:65:3a:32:65:6d:3b:6d:61:72:67:69:6e:3a:2e:36:37:65:6d:20:30:7d:6d:61:72:6b:7b:62:61:63:6b:67:72:6f:75:6e:64:3a:23:66:66:30:3b:63:6f:6c:6f:72:3a:23:30:30:30:7d:73:6d:61:6c:6c:7b:66:6f:6e:74:2d:73:69:7a:65:3a:38:30:25:7d:73:75:62:2c:73:75:70:7b:66:6f:6e:74:2d:73:69:7a:65:3a:37:35:25:3b:6c:69:6e:65:2d:68:65:69:67:68:74:3a:30:3b:70:6f:73:69:74:69:6f:6e:3a:72:65:6c:61:74:69:76:65:3b:76:65:72:74:69:63:61:6c:2d:61:6c:69:67:6e:3a:62:61:73:65:6c:69:6e:65:7d:73:75:70:7b:74:6f:70:3a:2d:2e:35:65:6d:7d:73:75:62:7b:62:6f:74:74:6f:6d:3a:2d:2e:32:35:65:6d:7d:69:6d:67:7b:62:6f:72:64:65:72:3a:30:7d:73:76:67:3a:6e:6f:74:28:3a:72:6f:6f:74:29:7b:6f:76:65:72:66:6c:6f:77:3a:68:69:64:64:65:6e:7d:66:69:67:75:72:65:7b:6d:61:72:67:69:6e:3a:31:65:6d:20:34:30:70:78:7d:68:72:7b:2d:6d:6f:7a:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:68:65:69:67:68:74:3a:30:7d:70:72:65:7b:6f:76:65:72:66:6c:6f:77:3a:61:75:74:6f:7d:63:6f:64:65:2c:6b:62:64:2c:70:72:65:2c:73:61:6d:70:7b:66:6f:6e:74:2d:66:61:6d:69:6c:79:3a:6d:6f:6e:6f:73:70:61:63:65:2c:6d:6f:6e:6f:73:70:61:63:65:3b:66:6f:6e:74:2d:73:69:7a:65:3a:31:65:6d:7d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:2c:6f:70:74:67:72:6f:75:70:2c:73:65:6c:65:63:74:2c:74:65:78:74:61:72:65:61:7b:63:6f:6c:6f:72:3a:69:6e:68:65:72:69:74:3b:66:6f:6e:74:3a:69:6e:68:65:72:69:74:3b:6d:61:72:67:69:6e:3a:30:7d:62:75:74:74:6f:6e:7b:6f:76:65:72:66:6c:6f:77:3a:76:69:73:69:62:6c:65:7d:62:75:74:74:6f:6e:2c:73:65:6c:65:63:74:7b:74:65:78:74:2d:74:72:61:6e:73:66:6f:72:6d:3a:6e:6f:6e:65:7d:62:75:74:74:6f:6e:2c:68:74:6d:6c:20:69:6e:70:75:74:5b:74:79:70:65:3d:62:75:74:74:6f:6e:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:72:65:73:65:74:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:73:75:62:6d:69:74:5d:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:62:75:74:74:6f:6e:3b:63:75:72:73:6f:72:3a:70:6f:69:6e:74:65:72:7d:62:75:74:74:6f:6e:5b:64:69:73:61:62:6c:65:64:5d:2c:68:74:6d:6c:20:69:6e:70:75:74:5b:64:69:73:61:62:6c:65:64:5d:7b:63:75:72:73:6f:72:3a:64:65:66:61:75:6c:74:7d:62:75:74:74:6f:6e:3a:3a:2d:6d:6f:7a:2d:66:6f:63:75:73:2d:69:6e:6e:65:72:2c:69:6e:70:75:74:3a:3a:2d:6d:6f:7a:2d:66:6f:63:75:73:2d:69:6e:6e:65:72:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:7b:6c:69:6e:65:2d:68:65:69:67:68:74:3a:6e:6f:72:6d:61:6c:7d:69:6e:70:75:74:5b:74:79:70:65:3d:63:68:65:63:6b:62:6f:78:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:72:61:64:69:6f:5d:7b:62:6f:78:2d:73:69:7a:69:6e:67:3a:62:6f:72:64:65:72:2d:62:6f:78:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:69:6e:6e:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:6f:75:74:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:7b:68:65:69:67:68:74:3a:61:75:74:6f:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:74:65:78:74:66:69:65:6c:64:3b:2d:6d:6f:7a:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:2d:77:65:62:6b:69:74:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:63:61:6e:63:65:6c:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:64:65:63:6f:72:61:74:69:6f:6e:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:6e:6f:6e:65:7d:66:69:65:6c:64:73:65:74:7b:62:6f:72:64:65:72:3a:31:70:78:20:73:6f:6c:69:64:20:73:69:6c:76:65:72:3b:6d:61:72:67:69:6e:3a:30:20:32:70:78:3b:70:61:64:64:69:6e:67:3a:2e:33:35:65:6d:20:2e:36:32:35:65:6d:20:2e:37:35:65:6d:7d:6c:65:67:65:6e:64:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:74:65:78:74:61:72:65:61:7b:6f:76:65:72:66:6c:6f:77:3a:61:75:74:6f:7d:6f:70:74:67:72:6f:75:70:7b:66:6f:6e:74:2d:77:65:69:67:68:74:3a:37:30:30:7d:74:61:62:6c:65:7b:62:6f:72:64:65:72:2d:63:6f:6c:6c:61:70:73:65:3a:63:6f:6c:6c:61:70:73:65:3b:62:6f:72:64:65:72:2d:73:70:61:63:69:6e:67:3a:30:7d:74:64:2c:74:68:7b:70:61:64:64:69:6e:67:3a:30:7d'}, 'http': {'HTTP/1.1 200 OK\\r\\n': {'_ws.expert': {'http.chat': '', '_ws.expert.message': 'HTTP/1.1 200 OK\\r\\n', '_ws.expert.severity': '2097152', '_ws.expert.group': '33554432'}, 'http.response.version': 'HTTP/1.1', 'http.response.code': '200', 'http.response.code.desc': 'OK', 'http.response.phrase': 'OK'}, 'http.date': 'Sun, 15 Aug 2021 13:06:31 GMT', 'http.response.line': 'Content-Length: 1981\r\n', 'http.content_type': 'text/css', 'http.connection': 'Keep-Alive', 'http.last_modified': 'Tue, 13 Apr 2021 08:53:48 GMT', 'http.content_length_header': '1981', 'http.content_length_header_tree': {'http.content_length': '1981'}, '\\r\\n': '', 'http.response': '1', 'http.response_number': '2', 'http.time': '0.027976000', 'http.prev_request_in': '15847', 'http.prev_response_in': '15890', 'http.request_in': '15895', 'http.response_for.uri': 'http://www.pasa.go.kr/resources/css/normalize.min.css', 'http.file_data': '/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}'}, 'data-text-lines': {' [truncated]/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,me': ''}}}}
+{
+	"_index": "packets-2021-08-15",
+	"_type": "doc",
+	"_score": null,
+	"_source": {
+		"layers": {
+			"frame": {
+				"frame.interface_id": "0",
+				"frame.interface_id_tree": {
+					"frame.interface_name": "\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}",
+					"frame.interface_description": "Wi-Fi"
+				},
+				"frame.encap_type": "1",
+				"frame.time": "Aug 15, 2021 22:06:31.960860000 대한민국 표준시",
+				"frame.offset_shift": "0.000000000",
+				"frame.time_epoch": "1629032791.960860000",
+				"frame.time_delta": "0.000000000",
+				"frame.time_delta_displayed": "0.004388000",
+				"frame.time_relative": "69.852017000",
+				"frame.number": "15909",
+				"frame.len": "747",
+				"frame.cap_len": "747",
+				"frame.marked": "0",
+				"frame.ignored": "0",
+				"frame.protocols": "eth:ethertype:ip:tcp:http:data-text-lines"
+			},
+			"eth": {
+				"eth.dst": "2c:8d:b1:e8:1b:92",
+				"eth.dst_tree": {
+					"eth.dst_resolved": "IntelCor_e8:1b:92",
+					"eth.dst.oui": "2919857",
+					"eth.dst.oui_resolved": "Intel Corporate",
+					"eth.addr": "2c:8d:b1:e8:1b:92",
+					"eth.addr_resolved": "IntelCor_e8:1b:92",
+					"eth.addr.oui": "2919857",
+					"eth.addr.oui_resolved": "Intel Corporate",
+					"eth.dst.lg": "0",
+					"eth.lg": "0",
+					"eth.dst.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.src": "70:5d:cc:db:08:a8",
+				"eth.src_tree": {
+					"eth.src_resolved": "EFMNetwo_db:08:a8",
+					"eth.src.oui": "7364044",
+					"eth.src.oui_resolved": "EFM Networks",
+					"eth.addr": "70:5d:cc:db:08:a8",
+					"eth.addr_resolved": "EFMNetwo_db:08:a8",
+					"eth.addr.oui": "7364044",
+					"eth.addr.oui_resolved": "EFM Networks",
+					"eth.src.lg": "0",
+					"eth.lg": "0",
+					"eth.src.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.type": "0x00000800"
+			},
+			"ip": {
+				"ip.version": "4",
+				"ip.hdr_len": "20",
+				"ip.dsfield": "0x00000000",
+				"ip.dsfield_tree": {
+					"ip.dsfield.dscp": "0",
+					"ip.dsfield.ecn": "0"
+				},
+				"ip.len": "733",
+				"ip.id": "0x0000710a",
+				"ip.flags": "0x00000040",
+				"ip.flags_tree": {
+					"ip.flags.rb": "0",
+					"ip.flags.df": "1",
+					"ip.flags.mf": "0"
+				},
+				"ip.frag_offset": "0",
+				"ip.ttl": "43",
+				"ip.proto": "6",
+				"ip.checksum": "0x000038e9",
+				"ip.checksum.status": "2",
+				"ip.src": "27.101.199.11",
+				"ip.addr": "192.168.0.15",
+				"ip.src_host": "27.101.199.11",
+				"ip.host": "192.168.0.15",
+				"ip.dst": "192.168.0.15",
+				"ip.dst_host": "192.168.0.15"
+			},
+			"tcp": {
+				"tcp.srcport": "80",
+				"tcp.dstport": "55884",
+				"tcp.port": "55884",
+				"tcp.stream": "197",
+				"tcp.len": "693",
+				"tcp.seq": "13795",
+				"tcp.seq_raw": "1925377344",
+				"tcp.nxtseq": "14488",
+				"tcp.ack": "928",
+				"tcp.ack_raw": "2666289732",
+				"tcp.hdr_len": "20",
+				"tcp.flags": "0x00000018",
+				"tcp.flags_tree": {
+					"tcp.flags.res": "0",
+					"tcp.flags.ns": "0",
+					"tcp.flags.cwr": "0",
+					"tcp.flags.ecn": "0",
+					"tcp.flags.urg": "0",
+					"tcp.flags.ack": "1",
+					"tcp.flags.push": "1",
+					"tcp.flags.reset": "0",
+					"tcp.flags.syn": "0",
+					"tcp.flags.fin": "0",
+					"tcp.flags.str": "·······AP···"
+				},
+				"tcp.window_size_value": "65535",
+				"tcp.window_size": "65535",
+				"tcp.window_size_scalefactor": "-2",
+				"tcp.checksum": "0x00003036",
+				"tcp.checksum.status": "2",
+				"tcp.urgent_pointer": "0",
+				"tcp.analysis": {
+					"tcp.analysis.initial_rtt": "0.029173000",
+					"tcp.analysis.bytes_in_flight": "2153",
+					"tcp.analysis.push_bytes_sent": "2153"
+				},
+				"Timestamps": {
+					"tcp.time_relative": "0.246629000",
+					"tcp.time_delta": "0.000000000"
+				},
+				"tcp.payload": "7a:2d:66:6f:63:75:73:2d:69:6e:6e:65:72:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:7b:6c:69:6e:65:2d:68:65:69:67:68:74:3a:6e:6f:72:6d:61:6c:7d:69:6e:70:75:74:5b:74:79:70:65:3d:63:68:65:63:6b:62:6f:78:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:72:61:64:69:6f:5d:7b:62:6f:78:2d:73:69:7a:69:6e:67:3a:62:6f:72:64:65:72:2d:62:6f:78:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:69:6e:6e:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:6f:75:74:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:7b:68:65:69:67:68:74:3a:61:75:74:6f:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:74:65:78:74:66:69:65:6c:64:3b:2d:6d:6f:7a:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:2d:77:65:62:6b:69:74:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:63:61:6e:63:65:6c:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:64:65:63:6f:72:61:74:69:6f:6e:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:6e:6f:6e:65:7d:66:69:65:6c:64:73:65:74:7b:62:6f:72:64:65:72:3a:31:70:78:20:73:6f:6c:69:64:20:73:69:6c:76:65:72:3b:6d:61:72:67:69:6e:3a:30:20:32:70:78:3b:70:61:64:64:69:6e:67:3a:2e:33:35:65:6d:20:2e:36:32:35:65:6d:20:2e:37:35:65:6d:7d:6c:65:67:65:6e:64:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:74:65:78:74:61:72:65:61:7b:6f:76:65:72:66:6c:6f:77:3a:61:75:74:6f:7d:6f:70:74:67:72:6f:75:70:7b:66:6f:6e:74:2d:77:65:69:67:68:74:3a:37:30:30:7d:74:61:62:6c:65:7b:62:6f:72:64:65:72:2d:63:6f:6c:6c:61:70:73:65:3a:63:6f:6c:6c:61:70:73:65:3b:62:6f:72:64:65:72:2d:73:70:61:63:69:6e:67:3a:30:7d:74:64:2c:74:68:7b:70:61:64:64:69:6e:67:3a:30:7d",
+				"tcp.segment_data": "7a:2d:66:6f:63:75:73:2d:69:6e:6e:65:72:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:7b:6c:69:6e:65:2d:68:65:69:67:68:74:3a:6e:6f:72:6d:61:6c:7d:69:6e:70:75:74:5b:74:79:70:65:3d:63:68:65:63:6b:62:6f:78:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:72:61:64:69:6f:5d:7b:62:6f:78:2d:73:69:7a:69:6e:67:3a:62:6f:72:64:65:72:2d:62:6f:78:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:69:6e:6e:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:6f:75:74:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:7b:68:65:69:67:68:74:3a:61:75:74:6f:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:74:65:78:74:66:69:65:6c:64:3b:2d:6d:6f:7a:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:2d:77:65:62:6b:69:74:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:63:61:6e:63:65:6c:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:64:65:63:6f:72:61:74:69:6f:6e:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:6e:6f:6e:65:7d:66:69:65:6c:64:73:65:74:7b:62:6f:72:64:65:72:3a:31:70:78:20:73:6f:6c:69:64:20:73:69:6c:76:65:72:3b:6d:61:72:67:69:6e:3a:30:20:32:70:78:3b:70:61:64:64:69:6e:67:3a:2e:33:35:65:6d:20:2e:36:32:35:65:6d:20:2e:37:35:65:6d:7d:6c:65:67:65:6e:64:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:74:65:78:74:61:72:65:61:7b:6f:76:65:72:66:6c:6f:77:3a:61:75:74:6f:7d:6f:70:74:67:72:6f:75:70:7b:66:6f:6e:74:2d:77:65:69:67:68:74:3a:37:30:30:7d:74:61:62:6c:65:7b:62:6f:72:64:65:72:2d:63:6f:6c:6c:61:70:73:65:3a:63:6f:6c:6c:61:70:73:65:3b:62:6f:72:64:65:72:2d:73:70:61:63:69:6e:67:3a:30:7d:74:64:2c:74:68:7b:70:61:64:64:69:6e:67:3a:30:7d"
+			},
+			"tcp.segments": {
+				"tcp.segment": "15909",
+				"tcp.segment.count": "2",
+				"tcp.reassembled.length": "2153",
+				"tcp.reassembled.data": "48:54:54:50:2f:31:2e:31:20:32:30:30:20:4f:4b:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:36:3a:33:31:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:74:65:78:74:2f:63:73:73:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:4b:65:65:70:2d:41:6c:69:76:65:0d:0a:4c:61:73:74:2d:4d:6f:64:69:66:69:65:64:3a:20:54:75:65:2c:20:31:33:20:41:70:72:20:32:30:32:31:20:30:38:3a:35:33:3a:34:38:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:39:38:31:0d:0a:0d:0a:2f:2a:21:20:6e:6f:72:6d:61:6c:69:7a:65:2e:63:73:73:20:76:33:2e:30:2e:32:20:7c:20:4d:49:54:20:4c:69:63:65:6e:73:65:20:7c:20:67:69:74:2e:69:6f:2f:6e:6f:72:6d:61:6c:69:7a:65:20:2a:2f:68:74:6d:6c:7b:66:6f:6e:74:2d:66:61:6d:69:6c:79:3a:73:61:6e:73:2d:73:65:72:69:66:3b:2d:6d:73:2d:74:65:78:74:2d:73:69:7a:65:2d:61:64:6a:75:73:74:3a:31:30:30:25:3b:2d:77:65:62:6b:69:74:2d:74:65:78:74:2d:73:69:7a:65:2d:61:64:6a:75:73:74:3a:31:30:30:25:7d:62:6f:64:79:7b:6d:61:72:67:69:6e:3a:30:7d:61:72:74:69:63:6c:65:2c:61:73:69:64:65:2c:64:65:74:61:69:6c:73:2c:66:69:67:63:61:70:74:69:6f:6e:2c:66:69:67:75:72:65:2c:66:6f:6f:74:65:72:2c:68:65:61:64:65:72:2c:68:67:72:6f:75:70:2c:6d:61:69:6e:2c:6d:65:6e:75:2c:6e:61:76:2c:73:65:63:74:69:6f:6e:2c:73:75:6d:6d:61:72:79:7b:64:69:73:70:6c:61:79:3a:62:6c:6f:63:6b:7d:61:75:64:69:6f:2c:63:61:6e:76:61:73:2c:70:72:6f:67:72:65:73:73:2c:76:69:64:65:6f:7b:64:69:73:70:6c:61:79:3a:69:6e:6c:69:6e:65:2d:62:6c:6f:63:6b:3b:76:65:72:74:69:63:61:6c:2d:61:6c:69:67:6e:3a:62:61:73:65:6c:69:6e:65:7d:61:75:64:69:6f:3a:6e:6f:74:28:5b:63:6f:6e:74:72:6f:6c:73:5d:29:7b:64:69:73:70:6c:61:79:3a:6e:6f:6e:65:3b:68:65:69:67:68:74:3a:30:7d:5b:68:69:64:64:65:6e:5d:2c:74:65:6d:70:6c:61:74:65:7b:64:69:73:70:6c:61:79:3a:6e:6f:6e:65:7d:61:7b:62:61:63:6b:67:72:6f:75:6e:64:2d:63:6f:6c:6f:72:3a:74:72:61:6e:73:70:61:72:65:6e:74:7d:61:3a:61:63:74:69:76:65:2c:61:3a:68:6f:76:65:72:7b:6f:75:74:6c:69:6e:65:3a:30:7d:61:62:62:72:5b:74:69:74:6c:65:5d:7b:62:6f:72:64:65:72:2d:62:6f:74:74:6f:6d:3a:31:70:78:20:64:6f:74:74:65:64:7d:62:2c:73:74:72:6f:6e:67:7b:66:6f:6e:74:2d:77:65:69:67:68:74:3a:37:30:30:7d:64:66:6e:7b:66:6f:6e:74:2d:73:74:79:6c:65:3a:69:74:61:6c:69:63:7d:68:31:7b:66:6f:6e:74:2d:73:69:7a:65:3a:32:65:6d:3b:6d:61:72:67:69:6e:3a:2e:36:37:65:6d:20:30:7d:6d:61:72:6b:7b:62:61:63:6b:67:72:6f:75:6e:64:3a:23:66:66:30:3b:63:6f:6c:6f:72:3a:23:30:30:30:7d:73:6d:61:6c:6c:7b:66:6f:6e:74:2d:73:69:7a:65:3a:38:30:25:7d:73:75:62:2c:73:75:70:7b:66:6f:6e:74:2d:73:69:7a:65:3a:37:35:25:3b:6c:69:6e:65:2d:68:65:69:67:68:74:3a:30:3b:70:6f:73:69:74:69:6f:6e:3a:72:65:6c:61:74:69:76:65:3b:76:65:72:74:69:63:61:6c:2d:61:6c:69:67:6e:3a:62:61:73:65:6c:69:6e:65:7d:73:75:70:7b:74:6f:70:3a:2d:2e:35:65:6d:7d:73:75:62:7b:62:6f:74:74:6f:6d:3a:2d:2e:32:35:65:6d:7d:69:6d:67:7b:62:6f:72:64:65:72:3a:30:7d:73:76:67:3a:6e:6f:74:28:3a:72:6f:6f:74:29:7b:6f:76:65:72:66:6c:6f:77:3a:68:69:64:64:65:6e:7d:66:69:67:75:72:65:7b:6d:61:72:67:69:6e:3a:31:65:6d:20:34:30:70:78:7d:68:72:7b:2d:6d:6f:7a:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:68:65:69:67:68:74:3a:30:7d:70:72:65:7b:6f:76:65:72:66:6c:6f:77:3a:61:75:74:6f:7d:63:6f:64:65:2c:6b:62:64:2c:70:72:65:2c:73:61:6d:70:7b:66:6f:6e:74:2d:66:61:6d:69:6c:79:3a:6d:6f:6e:6f:73:70:61:63:65:2c:6d:6f:6e:6f:73:70:61:63:65:3b:66:6f:6e:74:2d:73:69:7a:65:3a:31:65:6d:7d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:2c:6f:70:74:67:72:6f:75:70:2c:73:65:6c:65:63:74:2c:74:65:78:74:61:72:65:61:7b:63:6f:6c:6f:72:3a:69:6e:68:65:72:69:74:3b:66:6f:6e:74:3a:69:6e:68:65:72:69:74:3b:6d:61:72:67:69:6e:3a:30:7d:62:75:74:74:6f:6e:7b:6f:76:65:72:66:6c:6f:77:3a:76:69:73:69:62:6c:65:7d:62:75:74:74:6f:6e:2c:73:65:6c:65:63:74:7b:74:65:78:74:2d:74:72:61:6e:73:66:6f:72:6d:3a:6e:6f:6e:65:7d:62:75:74:74:6f:6e:2c:68:74:6d:6c:20:69:6e:70:75:74:5b:74:79:70:65:3d:62:75:74:74:6f:6e:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:72:65:73:65:74:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:73:75:62:6d:69:74:5d:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:62:75:74:74:6f:6e:3b:63:75:72:73:6f:72:3a:70:6f:69:6e:74:65:72:7d:62:75:74:74:6f:6e:5b:64:69:73:61:62:6c:65:64:5d:2c:68:74:6d:6c:20:69:6e:70:75:74:5b:64:69:73:61:62:6c:65:64:5d:7b:63:75:72:73:6f:72:3a:64:65:66:61:75:6c:74:7d:62:75:74:74:6f:6e:3a:3a:2d:6d:6f:7a:2d:66:6f:63:75:73:2d:69:6e:6e:65:72:2c:69:6e:70:75:74:3a:3a:2d:6d:6f:7a:2d:66:6f:63:75:73:2d:69:6e:6e:65:72:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:7b:6c:69:6e:65:2d:68:65:69:67:68:74:3a:6e:6f:72:6d:61:6c:7d:69:6e:70:75:74:5b:74:79:70:65:3d:63:68:65:63:6b:62:6f:78:5d:2c:69:6e:70:75:74:5b:74:79:70:65:3d:72:61:64:69:6f:5d:7b:62:6f:78:2d:73:69:7a:69:6e:67:3a:62:6f:72:64:65:72:2d:62:6f:78:3b:70:61:64:64:69:6e:67:3a:30:7d:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:69:6e:6e:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:6e:75:6d:62:65:72:5d:3a:3a:2d:77:65:62:6b:69:74:2d:6f:75:74:65:72:2d:73:70:69:6e:2d:62:75:74:74:6f:6e:7b:68:65:69:67:68:74:3a:61:75:74:6f:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:74:65:78:74:66:69:65:6c:64:3b:2d:6d:6f:7a:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:2d:77:65:62:6b:69:74:2d:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:3b:62:6f:78:2d:73:69:7a:69:6e:67:3a:63:6f:6e:74:65:6e:74:2d:62:6f:78:7d:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:63:61:6e:63:65:6c:2d:62:75:74:74:6f:6e:2c:69:6e:70:75:74:5b:74:79:70:65:3d:73:65:61:72:63:68:5d:3a:3a:2d:77:65:62:6b:69:74:2d:73:65:61:72:63:68:2d:64:65:63:6f:72:61:74:69:6f:6e:7b:2d:77:65:62:6b:69:74:2d:61:70:70:65:61:72:61:6e:63:65:3a:6e:6f:6e:65:7d:66:69:65:6c:64:73:65:74:7b:62:6f:72:64:65:72:3a:31:70:78:20:73:6f:6c:69:64:20:73:69:6c:76:65:72:3b:6d:61:72:67:69:6e:3a:30:20:32:70:78:3b:70:61:64:64:69:6e:67:3a:2e:33:35:65:6d:20:2e:36:32:35:65:6d:20:2e:37:35:65:6d:7d:6c:65:67:65:6e:64:7b:62:6f:72:64:65:72:3a:30:3b:70:61:64:64:69:6e:67:3a:30:7d:74:65:78:74:61:72:65:61:7b:6f:76:65:72:66:6c:6f:77:3a:61:75:74:6f:7d:6f:70:74:67:72:6f:75:70:7b:66:6f:6e:74:2d:77:65:69:67:68:74:3a:37:30:30:7d:74:61:62:6c:65:7b:62:6f:72:64:65:72:2d:63:6f:6c:6c:61:70:73:65:3a:63:6f:6c:6c:61:70:73:65:3b:62:6f:72:64:65:72:2d:73:70:61:63:69:6e:67:3a:30:7d:74:64:2c:74:68:7b:70:61:64:64:69:6e:67:3a:30:7d"
+			},
+			"http": {
+				"HTTP/1.1 200 OK\\r\\n": {
+					"_ws.expert": {
+						"http.chat": "",
+						"_ws.expert.message": "HTTP/1.1 200 OK\\r\\n",
+						"_ws.expert.severity": "2097152",
+						"_ws.expert.group": "33554432"
+					},
+					"http.response.version": "HTTP/1.1",
+					"http.response.code": "200",
+					"http.response.code.desc": "OK",
+					"http.response.phrase": "OK"
+				},
+				"http.date": "Sun, 15 Aug 2021 13:06:31 GMT",
+				"http.response.line": "Content-Length: 1981\r\n",
+				"http.content_type": "text/css",
+				"http.connection": "Keep-Alive",
+				"http.last_modified": "Tue, 13 Apr 2021 08:53:48 GMT",
+				"http.content_length_header": "1981",
+				"http.content_length_header_tree": {
+					"http.content_length": "1981"
+				},
+				"\\r\\n": "",
+				"http.response": "1",
+				"http.response_number": "2",
+				"http.time": "0.027976000",
+				"http.prev_request_in": "15847",
+				"http.prev_response_in": "15890",
+				"http.request_in": "15895",
+				"http.response_for.uri": "http://www.pasa.go.kr/resources/css/normalize.min.css",
+				"http.file_data": "/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}"
+			},
+			"data-text-lines": {
+				" [truncated]/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,me": ""
+			}
+		}
+	}
+}

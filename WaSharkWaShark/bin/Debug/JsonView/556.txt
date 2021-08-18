@@ -1,1 +1,166 @@
-{'_index': 'packets-2021-08-15', '_type': 'doc', '_score': None, '_source': {'layers': {'frame': {'frame.interface_id': '0', 'frame.interface_id_tree': {'frame.interface_name': '\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}', 'frame.interface_description': 'Wi-Fi'}, 'frame.encap_type': '1', 'frame.time': 'Aug 15, 2021 22:07:23.434072000 대한민국 표준시', 'frame.offset_shift': '0.000000000', 'frame.time_epoch': '1629032843.434072000', 'frame.time_delta': '0.000431000', 'frame.time_delta_displayed': '0.008275000', 'frame.time_relative': '121.325229000', 'frame.number': '22712', 'frame.len': '406', 'frame.cap_len': '406', 'frame.marked': '0', 'frame.ignored': '0', 'frame.protocols': 'eth:ethertype:ip:tcp:http:data'}, 'eth': {'eth.dst': '2c:8d:b1:e8:1b:92', 'eth.dst_tree': {'eth.dst_resolved': 'IntelCor_e8:1b:92', 'eth.dst.oui': '2919857', 'eth.dst.oui_resolved': 'Intel Corporate', 'eth.addr': '2c:8d:b1:e8:1b:92', 'eth.addr_resolved': 'IntelCor_e8:1b:92', 'eth.addr.oui': '2919857', 'eth.addr.oui_resolved': 'Intel Corporate', 'eth.dst.lg': '0', 'eth.lg': '0', 'eth.dst.ig': '0', 'eth.ig': '0'}, 'eth.src': '70:5d:cc:db:08:a8', 'eth.src_tree': {'eth.src_resolved': 'EFMNetwo_db:08:a8', 'eth.src.oui': '7364044', 'eth.src.oui_resolved': 'EFM Networks', 'eth.addr': '70:5d:cc:db:08:a8', 'eth.addr_resolved': 'EFMNetwo_db:08:a8', 'eth.addr.oui': '7364044', 'eth.addr.oui_resolved': 'EFM Networks', 'eth.src.lg': '0', 'eth.lg': '0', 'eth.src.ig': '0', 'eth.ig': '0'}, 'eth.type': '0x00000800'}, 'ip': {'ip.version': '4', 'ip.hdr_len': '20', 'ip.dsfield': '0x00000000', 'ip.dsfield_tree': {'ip.dsfield.dscp': '0', 'ip.dsfield.ecn': '0'}, 'ip.len': '392', 'ip.id': '0x0000c6d0', 'ip.flags': '0x00000040', 'ip.flags_tree': {'ip.flags.rb': '0', 'ip.flags.df': '1', 'ip.flags.mf': '0'}, 'ip.frag_offset': '0', 'ip.ttl': '52', 'ip.proto': '6', 'ip.checksum': '0x00007fa4', 'ip.checksum.status': '2', 'ip.src': '211.115.106.208', 'ip.addr': '192.168.0.15', 'ip.src_host': '211.115.106.208', 'ip.host': '192.168.0.15', 'ip.dst': '192.168.0.15', 'ip.dst_host': '192.168.0.15'}, 'tcp': {'tcp.srcport': '80', 'tcp.dstport': '53496', 'tcp.port': '53496', 'tcp.stream': '218', 'tcp.len': '352', 'tcp.seq': '1', 'tcp.seq_raw': '2067472086', 'tcp.nxtseq': '353', 'tcp.ack': '374', 'tcp.ack_raw': '1016214184', 'tcp.hdr_len': '20', 'tcp.flags': '0x00000018', 'tcp.flags_tree': {'tcp.flags.res': '0', 'tcp.flags.ns': '0', 'tcp.flags.cwr': '0', 'tcp.flags.ecn': '0', 'tcp.flags.urg': '0', 'tcp.flags.ack': '1', 'tcp.flags.push': '1', 'tcp.flags.reset': '0', 'tcp.flags.syn': '0', 'tcp.flags.fin': '0', 'tcp.flags.str': '·······AP···'}, 'tcp.window_size_value': '30', 'tcp.window_size': '30720', 'tcp.window_size_scalefactor': '1024', 'tcp.checksum': '0x00004886', 'tcp.checksum.status': '2', 'tcp.urgent_pointer': '0', 'tcp.analysis': {'tcp.analysis.initial_rtt': '0.009170000', 'tcp.analysis.bytes_in_flight': '352', 'tcp.analysis.push_bytes_sent': '352'}, 'Timestamps': {'tcp.time_relative': '0.020852000', 'tcp.time_delta': '0.000431000'}, 'tcp.payload': '48:54:54:50:2f:31:2e:31:20:32:30:30:20:4f:4b:0d:0a:53:65:72:76:65:72:3a:20:67:6d:73:20:66:6f:72:20:61:73:64:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:37:3a:32:33:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6f:63:74:65:74:2d:73:74:72:65:61:6d:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:32:30:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:6b:65:65:70:2d:61:6c:69:76:65:0d:0a:43:61:63:68:65:2d:43:6f:6e:74:72:6f:6c:3a:20:6e:6f:2d:63:61:63:68:65:2c:20:6e:6f:2d:73:74:6f:72:65:2c:20:6d:75:73:74:2d:72:65:76:61:6c:69:64:61:74:65:0d:0a:50:72:61:67:6d:61:3a:20:6e:6f:2d:63:61:63:68:65:0d:0a:0d:0a:46:6a:66:4e:63:31:65:64:69:32:43:5a:66:4f:42:6e:5f:53:5a:73:72:6a:37:4a:59:43:41:3d:2c:66:4f:31:42:34:56:56:72:4a:56:69:69:38:4e:61:41:4f:7a:34:79:72:4d:79:48:67:57:61:50:67:35:4d:35:7a:50:38:6e:57:74:70:58:7a:4b:71:57:58:46:4b:52:4c:59:36:42:5f:4d:6b:56:34:54:6f:79:61:43:43:54:75:4d:4d:33:63:53:6d:56:5f:6a:73:6a:43:68:77:33:55:34:6f:6f:57:51:3d:3d:2c:00:00'}, 'http': {'HTTP/1.1 200 OK\\r\\n': {'_ws.expert': {'http.chat': '', '_ws.expert.message': 'HTTP/1.1 200 OK\\r\\n', '_ws.expert.severity': '2097152', '_ws.expert.group': '33554432'}, 'http.response.version': 'HTTP/1.1', 'http.response.code': '200', 'http.response.code.desc': 'OK', 'http.response.phrase': 'OK'}, 'http.server': 'gms for asd', 'http.response.line': 'Pragma: no-cache\r\n', 'http.date': 'Sun, 15 Aug 2021 13:07:23 GMT', 'http.content_type': 'application/octet-stream', 'http.content_length_header': '120', 'http.content_length_header_tree': {'http.content_length': '120'}, 'http.connection': 'keep-alive', 'http.cache_control': 'no-cache, no-store, must-revalidate', '\\r\\n': '', 'http.response': '1', 'http.response_number': '1', 'http.time': '0.011496000', 'http.request_in': '22708', 'http.response_for.uri': 'http://gms.ahnlab.com/jk?c=62&p=UrFtBIu_WxqzYuJijvTE_DUNyAsa_GfynRXsJTMtyxs=&k=1', 'http.file_data': 'FjfNc1edi2CZfOBn_SZsrj7JYCA=,fO1B4VVrJVii8NaAOz4yrMyHgWaPg5M5zP8nWtpXzKqWXFKRLY6B_MkV4ToyaCCTuMM3cSmV_jsjChw3U4ooWQ==,'}, 'data': {'data.data': '46:6a:66:4e:63:31:65:64:69:32:43:5a:66:4f:42:6e:5f:53:5a:73:72:6a:37:4a:59:43:41:3d:2c:66:4f:31:42:34:56:56:72:4a:56:69:69:38:4e:61:41:4f:7a:34:79:72:4d:79:48:67:57:61:50:67:35:4d:35:7a:50:38:6e:57:74:70:58:7a:4b:71:57:58:46:4b:52:4c:59:36:42:5f:4d:6b:56:34:54:6f:79:61:43:43:54:75:4d:4d:33:63:53:6d:56:5f:6a:73:6a:43:68:77:33:55:34:6f:6f:57:51:3d:3d:2c:00:00', 'data.len': '120'}}}}
+{
+	"_index": "packets-2021-08-15",
+	"_type": "doc",
+	"_score": null,
+	"_source": {
+		"layers": {
+			"frame": {
+				"frame.interface_id": "0",
+				"frame.interface_id_tree": {
+					"frame.interface_name": "\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}",
+					"frame.interface_description": "Wi-Fi"
+				},
+				"frame.encap_type": "1",
+				"frame.time": "Aug 15, 2021 22:07:23.434072000 대한민국 표준시",
+				"frame.offset_shift": "0.000000000",
+				"frame.time_epoch": "1629032843.434072000",
+				"frame.time_delta": "0.000431000",
+				"frame.time_delta_displayed": "0.008275000",
+				"frame.time_relative": "121.325229000",
+				"frame.number": "22712",
+				"frame.len": "406",
+				"frame.cap_len": "406",
+				"frame.marked": "0",
+				"frame.ignored": "0",
+				"frame.protocols": "eth:ethertype:ip:tcp:http:data"
+			},
+			"eth": {
+				"eth.dst": "2c:8d:b1:e8:1b:92",
+				"eth.dst_tree": {
+					"eth.dst_resolved": "IntelCor_e8:1b:92",
+					"eth.dst.oui": "2919857",
+					"eth.dst.oui_resolved": "Intel Corporate",
+					"eth.addr": "2c:8d:b1:e8:1b:92",
+					"eth.addr_resolved": "IntelCor_e8:1b:92",
+					"eth.addr.oui": "2919857",
+					"eth.addr.oui_resolved": "Intel Corporate",
+					"eth.dst.lg": "0",
+					"eth.lg": "0",
+					"eth.dst.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.src": "70:5d:cc:db:08:a8",
+				"eth.src_tree": {
+					"eth.src_resolved": "EFMNetwo_db:08:a8",
+					"eth.src.oui": "7364044",
+					"eth.src.oui_resolved": "EFM Networks",
+					"eth.addr": "70:5d:cc:db:08:a8",
+					"eth.addr_resolved": "EFMNetwo_db:08:a8",
+					"eth.addr.oui": "7364044",
+					"eth.addr.oui_resolved": "EFM Networks",
+					"eth.src.lg": "0",
+					"eth.lg": "0",
+					"eth.src.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.type": "0x00000800"
+			},
+			"ip": {
+				"ip.version": "4",
+				"ip.hdr_len": "20",
+				"ip.dsfield": "0x00000000",
+				"ip.dsfield_tree": {
+					"ip.dsfield.dscp": "0",
+					"ip.dsfield.ecn": "0"
+				},
+				"ip.len": "392",
+				"ip.id": "0x0000c6d0",
+				"ip.flags": "0x00000040",
+				"ip.flags_tree": {
+					"ip.flags.rb": "0",
+					"ip.flags.df": "1",
+					"ip.flags.mf": "0"
+				},
+				"ip.frag_offset": "0",
+				"ip.ttl": "52",
+				"ip.proto": "6",
+				"ip.checksum": "0x00007fa4",
+				"ip.checksum.status": "2",
+				"ip.src": "211.115.106.208",
+				"ip.addr": "192.168.0.15",
+				"ip.src_host": "211.115.106.208",
+				"ip.host": "192.168.0.15",
+				"ip.dst": "192.168.0.15",
+				"ip.dst_host": "192.168.0.15"
+			},
+			"tcp": {
+				"tcp.srcport": "80",
+				"tcp.dstport": "53496",
+				"tcp.port": "53496",
+				"tcp.stream": "218",
+				"tcp.len": "352",
+				"tcp.seq": "1",
+				"tcp.seq_raw": "2067472086",
+				"tcp.nxtseq": "353",
+				"tcp.ack": "374",
+				"tcp.ack_raw": "1016214184",
+				"tcp.hdr_len": "20",
+				"tcp.flags": "0x00000018",
+				"tcp.flags_tree": {
+					"tcp.flags.res": "0",
+					"tcp.flags.ns": "0",
+					"tcp.flags.cwr": "0",
+					"tcp.flags.ecn": "0",
+					"tcp.flags.urg": "0",
+					"tcp.flags.ack": "1",
+					"tcp.flags.push": "1",
+					"tcp.flags.reset": "0",
+					"tcp.flags.syn": "0",
+					"tcp.flags.fin": "0",
+					"tcp.flags.str": "·······AP···"
+				},
+				"tcp.window_size_value": "30",
+				"tcp.window_size": "30720",
+				"tcp.window_size_scalefactor": "1024",
+				"tcp.checksum": "0x00004886",
+				"tcp.checksum.status": "2",
+				"tcp.urgent_pointer": "0",
+				"tcp.analysis": {
+					"tcp.analysis.initial_rtt": "0.009170000",
+					"tcp.analysis.bytes_in_flight": "352",
+					"tcp.analysis.push_bytes_sent": "352"
+				},
+				"Timestamps": {
+					"tcp.time_relative": "0.020852000",
+					"tcp.time_delta": "0.000431000"
+				},
+				"tcp.payload": "48:54:54:50:2f:31:2e:31:20:32:30:30:20:4f:4b:0d:0a:53:65:72:76:65:72:3a:20:67:6d:73:20:66:6f:72:20:61:73:64:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:37:3a:32:33:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6f:63:74:65:74:2d:73:74:72:65:61:6d:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:32:30:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:6b:65:65:70:2d:61:6c:69:76:65:0d:0a:43:61:63:68:65:2d:43:6f:6e:74:72:6f:6c:3a:20:6e:6f:2d:63:61:63:68:65:2c:20:6e:6f:2d:73:74:6f:72:65:2c:20:6d:75:73:74:2d:72:65:76:61:6c:69:64:61:74:65:0d:0a:50:72:61:67:6d:61:3a:20:6e:6f:2d:63:61:63:68:65:0d:0a:0d:0a:46:6a:66:4e:63:31:65:64:69:32:43:5a:66:4f:42:6e:5f:53:5a:73:72:6a:37:4a:59:43:41:3d:2c:66:4f:31:42:34:56:56:72:4a:56:69:69:38:4e:61:41:4f:7a:34:79:72:4d:79:48:67:57:61:50:67:35:4d:35:7a:50:38:6e:57:74:70:58:7a:4b:71:57:58:46:4b:52:4c:59:36:42:5f:4d:6b:56:34:54:6f:79:61:43:43:54:75:4d:4d:33:63:53:6d:56:5f:6a:73:6a:43:68:77:33:55:34:6f:6f:57:51:3d:3d:2c:00:00"
+			},
+			"http": {
+				"HTTP/1.1 200 OK\\r\\n": {
+					"_ws.expert": {
+						"http.chat": "",
+						"_ws.expert.message": "HTTP/1.1 200 OK\\r\\n",
+						"_ws.expert.severity": "2097152",
+						"_ws.expert.group": "33554432"
+					},
+					"http.response.version": "HTTP/1.1",
+					"http.response.code": "200",
+					"http.response.code.desc": "OK",
+					"http.response.phrase": "OK"
+				},
+				"http.server": "gms for asd",
+				"http.response.line": "Pragma: no-cache\r\n",
+				"http.date": "Sun, 15 Aug 2021 13:07:23 GMT",
+				"http.content_type": "application/octet-stream",
+				"http.content_length_header": "120",
+				"http.content_length_header_tree": {
+					"http.content_length": "120"
+				},
+				"http.connection": "keep-alive",
+				"http.cache_control": "no-cache, no-store, must-revalidate",
+				"\\r\\n": "",
+				"http.response": "1",
+				"http.response_number": "1",
+				"http.time": "0.011496000",
+				"http.request_in": "22708",
+				"http.response_for.uri": "http://gms.ahnlab.com/jk?c=62&p=UrFtBIu_WxqzYuJijvTE_DUNyAsa_GfynRXsJTMtyxs=&k=1",
+				"http.file_data": "FjfNc1edi2CZfOBn_SZsrj7JYCA=,fO1B4VVrJVii8NaAOz4yrMyHgWaPg5M5zP8nWtpXzKqWXFKRLY6B_MkV4ToyaCCTuMM3cSmV_jsjChw3U4ooWQ==,"
+			},
+			"data": {
+				"data.data": "46:6a:66:4e:63:31:65:64:69:32:43:5a:66:4f:42:6e:5f:53:5a:73:72:6a:37:4a:59:43:41:3d:2c:66:4f:31:42:34:56:56:72:4a:56:69:69:38:4e:61:41:4f:7a:34:79:72:4d:79:48:67:57:61:50:67:35:4d:35:7a:50:38:6e:57:74:70:58:7a:4b:71:57:58:46:4b:52:4c:59:36:42:5f:4d:6b:56:34:54:6f:79:61:43:43:54:75:4d:4d:33:63:53:6d:56:5f:6a:73:6a:43:68:77:33:55:34:6f:6f:57:51:3d:3d:2c:00:00",
+				"data.len": "120"
+			}
+		}
+	}
+}

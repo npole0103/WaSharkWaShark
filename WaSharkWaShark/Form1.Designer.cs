@@ -54,6 +54,8 @@
             this.sfd = new System.Windows.Forms.SaveFileDialog();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.txtDialog = new System.Windows.Forms.RichTextBox();
+            this.pbState = new System.Windows.Forms.ProgressBar();
+            this.lblPb = new System.Windows.Forms.Label();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +83,7 @@
             this.패킷정보저장SToolStripMenuItem.Name = "패킷정보저장SToolStripMenuItem";
             this.패킷정보저장SToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.패킷정보저장SToolStripMenuItem.Text = "패킷정보 저장(&S)";
+            this.패킷정보저장SToolStripMenuItem.Click += new System.EventHandler(this.패킷정보저장SToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -95,6 +98,7 @@
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
             this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.도움말ToolStripMenuItem.Text = "도움말";
+            this.도움말ToolStripMenuItem.Click += new System.EventHandler(this.도움말ToolStripMenuItem_Click);
             // 
             // lvwPacket
             // 
@@ -240,11 +244,29 @@
             this.txtDialog.TabIndex = 8;
             this.txtDialog.Text = "";
             // 
+            // pbState
+            // 
+            this.pbState.Location = new System.Drawing.Point(686, 461);
+            this.pbState.Name = "pbState";
+            this.pbState.Size = new System.Drawing.Size(420, 23);
+            this.pbState.TabIndex = 9;
+            // 
+            // lblPb
+            // 
+            this.lblPb.AutoSize = true;
+            this.lblPb.Location = new System.Drawing.Point(606, 466);
+            this.lblPb.Name = "lblPb";
+            this.lblPb.Size = new System.Drawing.Size(33, 12);
+            this.lblPb.TabIndex = 10;
+            this.lblPb.Text = "State";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1526, 518);
+            this.Controls.Add(this.lblPb);
+            this.Controls.Add(this.pbState);
             this.Controls.Add(this.txtDialog);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
@@ -291,6 +313,8 @@
         private System.Windows.Forms.SaveFileDialog sfd;
         private System.Windows.Forms.OpenFileDialog ofd;
         private System.Windows.Forms.RichTextBox txtDialog;
+        private System.Windows.Forms.ProgressBar pbState;
+        private System.Windows.Forms.Label lblPb;
     }
 }
 

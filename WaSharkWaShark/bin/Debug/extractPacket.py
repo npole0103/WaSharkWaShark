@@ -21,7 +21,7 @@ def createFolder(directory):
 createFolder('RawPacket')
 createFolder('JsonView')
 
-with open ("OriMain.json", "r", encoding="utf-8") as json_file:
+with open ("Main.json", "r", encoding="utf-8") as json_file:
     json_data = json.load(json_file)
 
 count = 1
@@ -68,12 +68,12 @@ for i in json_data:
     """
 
     f = open("RawPacket/%s.txt"%result["No"], 'w', encoding="utf-8")
-    data = ":".join("{:02x}".format(ord(ch)) for ch in str(i))
+    data = " ".join("{:02x}".format(ord(ch)) for ch in str(i))
     f.write(data)
     f.close()
 
     f = open("JsonView/%s.txt"%result["No"], 'w', encoding="utf-8")
-    data = str(i)
+    data = str(json.dumps(i, ensure_ascii=False, indent='\t'))
     f.write(data)
     f.close()
 

@@ -1,1 +1,160 @@
-{'_index': 'packets-2021-08-15', '_type': 'doc', '_score': None, '_source': {'layers': {'frame': {'frame.interface_id': '0', 'frame.interface_id_tree': {'frame.interface_name': '\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}', 'frame.interface_description': 'Wi-Fi'}, 'frame.encap_type': '1', 'frame.time': 'Aug 15, 2021 22:06:24.417825000 대한민국 표준시', 'frame.offset_shift': '0.000000000', 'frame.time_epoch': '1629032784.417825000', 'frame.time_delta': '0.000011000', 'frame.time_delta_displayed': '0.000011000', 'frame.time_relative': '62.308982000', 'frame.number': '12392', 'frame.len': '701', 'frame.cap_len': '701', 'frame.marked': '0', 'frame.ignored': '0', 'frame.protocols': 'eth:ethertype:ip:tcp:http'}, 'eth': {'eth.dst': '70:5d:cc:db:08:a8', 'eth.dst_tree': {'eth.dst_resolved': 'EFMNetwo_db:08:a8', 'eth.dst.oui': '7364044', 'eth.dst.oui_resolved': 'EFM Networks', 'eth.addr': '70:5d:cc:db:08:a8', 'eth.addr_resolved': 'EFMNetwo_db:08:a8', 'eth.addr.oui': '7364044', 'eth.addr.oui_resolved': 'EFM Networks', 'eth.dst.lg': '0', 'eth.lg': '0', 'eth.dst.ig': '0', 'eth.ig': '0'}, 'eth.src': '2c:8d:b1:e8:1b:92', 'eth.src_tree': {'eth.src_resolved': 'IntelCor_e8:1b:92', 'eth.src.oui': '2919857', 'eth.src.oui_resolved': 'Intel Corporate', 'eth.addr': '2c:8d:b1:e8:1b:92', 'eth.addr_resolved': 'IntelCor_e8:1b:92', 'eth.addr.oui': '2919857', 'eth.addr.oui_resolved': 'Intel Corporate', 'eth.src.lg': '0', 'eth.lg': '0', 'eth.src.ig': '0', 'eth.ig': '0'}, 'eth.type': '0x00000800'}, 'ip': {'ip.version': '4', 'ip.hdr_len': '20', 'ip.dsfield': '0x00000000', 'ip.dsfield_tree': {'ip.dsfield.dscp': '0', 'ip.dsfield.ecn': '0'}, 'ip.len': '687', 'ip.id': '0x0000e920', 'ip.flags': '0x00000040', 'ip.flags_tree': {'ip.flags.rb': '0', 'ip.flags.df': '1', 'ip.flags.mf': '0'}, 'ip.frag_offset': '0', 'ip.ttl': '128', 'ip.proto': '6', 'ip.checksum': '0x00000000', 'ip.checksum.status': '2', 'ip.src': '192.168.0.15', 'ip.addr': '27.101.214.129', 'ip.src_host': '192.168.0.15', 'ip.host': '27.101.214.129', 'ip.dst': '27.101.214.129', 'ip.dst_host': '27.101.214.129'}, 'tcp': {'tcp.srcport': '52939', 'tcp.dstport': '80', 'tcp.port': '80', 'tcp.stream': '146', 'tcp.len': '647', 'tcp.seq': '1', 'tcp.seq_raw': '3211812287', 'tcp.nxtseq': '648', 'tcp.ack': '1', 'tcp.ack_raw': '2714543632', 'tcp.hdr_len': '20', 'tcp.flags': '0x00000018', 'tcp.flags_tree': {'tcp.flags.res': '0', 'tcp.flags.ns': '0', 'tcp.flags.cwr': '0', 'tcp.flags.ecn': '0', 'tcp.flags.urg': '0', 'tcp.flags.ack': '1', 'tcp.flags.push': '1', 'tcp.flags.reset': '0', 'tcp.flags.syn': '0', 'tcp.flags.fin': '0', 'tcp.flags.str': '·······AP···'}, 'tcp.window_size_value': '513', 'tcp.window_size': '131328', 'tcp.window_size_scalefactor': '256', 'tcp.checksum': '0x0000b53f', 'tcp.checksum.status': '2', 'tcp.urgent_pointer': '0', 'tcp.analysis': {'tcp.analysis.initial_rtt': '0.033315000', 'tcp.analysis.bytes_in_flight': '647', 'tcp.analysis.push_bytes_sent': '647'}, 'Timestamps': {'tcp.time_relative': '0.034050000', 'tcp.time_delta': '0.000735000'}, 'tcp.payload': '47:45:54:20:2f:61:62:6f:75:74:73:74:79:6c:65:2f:69:6d:61:67:65:73:2f:6d:61:69:6e:2f:62:6f:61:72:64:5f:62:6f:78:2e:67:69:66:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:73:6f:63:69:61:6c:64:69:73:61:73:74:65:72:73:63:6f:6d:6d:69:73:73:69:6f:6e:2e:67:6f:2e:6b:72:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:6b:65:65:70:2d:61:6c:69:76:65:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:4d:6f:7a:69:6c:6c:61:2f:35:2e:30:20:28:57:69:6e:64:6f:77:73:20:4e:54:20:31:30:2e:30:3b:20:57:69:6e:36:34:3b:20:78:36:34:29:20:41:70:70:6c:65:57:65:62:4b:69:74:2f:35:33:37:2e:33:36:20:28:4b:48:54:4d:4c:2c:20:6c:69:6b:65:20:47:65:63:6b:6f:29:20:43:68:72:6f:6d:65:2f:39:32:2e:30:2e:34:35:31:35:2e:31:33:31:20:53:61:66:61:72:69:2f:35:33:37:2e:33:36:20:45:64:67:2f:39:32:2e:30:2e:39:30:32:2e:37:33:0d:0a:41:63:63:65:70:74:3a:20:69:6d:61:67:65:2f:77:65:62:70:2c:69:6d:61:67:65:2f:61:70:6e:67:2c:69:6d:61:67:65:2f:73:76:67:2b:78:6d:6c:2c:69:6d:61:67:65:2f:2a:2c:2a:2f:2a:3b:71:3d:30:2e:38:0d:0a:52:65:66:65:72:65:72:3a:20:68:74:74:70:3a:2f:2f:73:6f:63:69:61:6c:64:69:73:61:73:74:65:72:73:63:6f:6d:6d:69:73:73:69:6f:6e:2e:67:6f:2e:6b:72:2f:61:62:6f:75:74:73:74:79:6c:65:2f:63:73:73:2f:6d:61:69:6e:2e:63:73:73:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:67:7a:69:70:2c:20:64:65:66:6c:61:74:65:0d:0a:41:63:63:65:70:74:2d:4c:61:6e:67:75:61:67:65:3a:20:6b:6f:2c:65:6e:3b:71:3d:30:2e:39:2c:65:6e:2d:55:53:3b:71:3d:30:2e:38:0d:0a:43:6f:6f:6b:69:65:3a:20:4a:53:45:53:53:49:4f:4e:49:44:3d:6a:52:32:41:2b:52:38:33:4e:32:37:50:50:58:6f:70:2b:48:6e:35:6f:30:50:53:2e:73:74:61:6e:64:61:6c:6f:6e:65:31:3b:20:63:6c:69:65:6e:74:69:64:3d:30:33:30:30:33:38:35:35:36:35:36:31:3b:20:5f:67:61:3d:47:41:31:2e:33:2e:31:36:33:39:32:35:35:32:36:31:2e:31:36:32:39:30:33:32:37:38:34:3b:20:5f:67:69:64:3d:47:41:31:2e:33:2e:31:34:37:32:31:39:35:39:34:30:2e:31:36:32:39:30:33:32:37:38:34:3b:20:5f:67:61:74:5f:67:74:61:67:5f:55:41:5f:31:33:34:38:33:33:32:39:33:5f:31:3d:31:0d:0a:0d:0a'}, 'http': {'GET /aboutstyle/images/main/board_box.gif HTTP/1.1\\r\\n': {'_ws.expert': {'http.chat': '', '_ws.expert.message': 'GET /aboutstyle/images/main/board_box.gif HTTP/1.1\\r\\n', '_ws.expert.severity': '2097152', '_ws.expert.group': '33554432'}, 'http.request.method': 'GET', 'http.request.uri': '/aboutstyle/images/main/board_box.gif', 'http.request.version': 'HTTP/1.1'}, 'http.host': 'socialdisasterscommission.go.kr', 'http.request.line': 'Cookie: JSESSIONID=jR2A+R83N27PPXop+Hn5o0PS.standalone1; clientid=030038556561; _ga=GA1.3.1639255261.1629032784; _gid=GA1.3.1472195940.1629032784; _gat_gtag_UA_134833293_1=1\r\n', 'http.connection': 'keep-alive', 'http.user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73', 'http.accept': 'image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'http.referer': 'http://socialdisasterscommission.go.kr/aboutstyle/css/main.css', 'http.accept_encoding': 'gzip, deflate', 'http.accept_language': 'ko,en;q=0.9,en-US;q=0.8', 'http.cookie': 'JSESSIONID=jR2A+R83N27PPXop+Hn5o0PS.standalone1; clientid=030038556561; _ga=GA1.3.1639255261.1629032784; _gid=GA1.3.1472195940.1629032784; _gat_gtag_UA_134833293_1=1', 'http.cookie_tree': {'http.cookie_pair': '_gat_gtag_UA_134833293_1=1'}, '\\r\\n': '', 'http.request.full_uri': 'http://socialdisasterscommission.go.kr/aboutstyle/images/main/board_box.gif', 'http.request': '1', 'http.request_number': '1'}}}}
+{
+	"_index": "packets-2021-08-15",
+	"_type": "doc",
+	"_score": null,
+	"_source": {
+		"layers": {
+			"frame": {
+				"frame.interface_id": "0",
+				"frame.interface_id_tree": {
+					"frame.interface_name": "\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}",
+					"frame.interface_description": "Wi-Fi"
+				},
+				"frame.encap_type": "1",
+				"frame.time": "Aug 15, 2021 22:06:24.417825000 대한민국 표준시",
+				"frame.offset_shift": "0.000000000",
+				"frame.time_epoch": "1629032784.417825000",
+				"frame.time_delta": "0.000011000",
+				"frame.time_delta_displayed": "0.000011000",
+				"frame.time_relative": "62.308982000",
+				"frame.number": "12392",
+				"frame.len": "701",
+				"frame.cap_len": "701",
+				"frame.marked": "0",
+				"frame.ignored": "0",
+				"frame.protocols": "eth:ethertype:ip:tcp:http"
+			},
+			"eth": {
+				"eth.dst": "70:5d:cc:db:08:a8",
+				"eth.dst_tree": {
+					"eth.dst_resolved": "EFMNetwo_db:08:a8",
+					"eth.dst.oui": "7364044",
+					"eth.dst.oui_resolved": "EFM Networks",
+					"eth.addr": "70:5d:cc:db:08:a8",
+					"eth.addr_resolved": "EFMNetwo_db:08:a8",
+					"eth.addr.oui": "7364044",
+					"eth.addr.oui_resolved": "EFM Networks",
+					"eth.dst.lg": "0",
+					"eth.lg": "0",
+					"eth.dst.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.src": "2c:8d:b1:e8:1b:92",
+				"eth.src_tree": {
+					"eth.src_resolved": "IntelCor_e8:1b:92",
+					"eth.src.oui": "2919857",
+					"eth.src.oui_resolved": "Intel Corporate",
+					"eth.addr": "2c:8d:b1:e8:1b:92",
+					"eth.addr_resolved": "IntelCor_e8:1b:92",
+					"eth.addr.oui": "2919857",
+					"eth.addr.oui_resolved": "Intel Corporate",
+					"eth.src.lg": "0",
+					"eth.lg": "0",
+					"eth.src.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.type": "0x00000800"
+			},
+			"ip": {
+				"ip.version": "4",
+				"ip.hdr_len": "20",
+				"ip.dsfield": "0x00000000",
+				"ip.dsfield_tree": {
+					"ip.dsfield.dscp": "0",
+					"ip.dsfield.ecn": "0"
+				},
+				"ip.len": "687",
+				"ip.id": "0x0000e920",
+				"ip.flags": "0x00000040",
+				"ip.flags_tree": {
+					"ip.flags.rb": "0",
+					"ip.flags.df": "1",
+					"ip.flags.mf": "0"
+				},
+				"ip.frag_offset": "0",
+				"ip.ttl": "128",
+				"ip.proto": "6",
+				"ip.checksum": "0x00000000",
+				"ip.checksum.status": "2",
+				"ip.src": "192.168.0.15",
+				"ip.addr": "27.101.214.129",
+				"ip.src_host": "192.168.0.15",
+				"ip.host": "27.101.214.129",
+				"ip.dst": "27.101.214.129",
+				"ip.dst_host": "27.101.214.129"
+			},
+			"tcp": {
+				"tcp.srcport": "52939",
+				"tcp.dstport": "80",
+				"tcp.port": "80",
+				"tcp.stream": "146",
+				"tcp.len": "647",
+				"tcp.seq": "1",
+				"tcp.seq_raw": "3211812287",
+				"tcp.nxtseq": "648",
+				"tcp.ack": "1",
+				"tcp.ack_raw": "2714543632",
+				"tcp.hdr_len": "20",
+				"tcp.flags": "0x00000018",
+				"tcp.flags_tree": {
+					"tcp.flags.res": "0",
+					"tcp.flags.ns": "0",
+					"tcp.flags.cwr": "0",
+					"tcp.flags.ecn": "0",
+					"tcp.flags.urg": "0",
+					"tcp.flags.ack": "1",
+					"tcp.flags.push": "1",
+					"tcp.flags.reset": "0",
+					"tcp.flags.syn": "0",
+					"tcp.flags.fin": "0",
+					"tcp.flags.str": "·······AP···"
+				},
+				"tcp.window_size_value": "513",
+				"tcp.window_size": "131328",
+				"tcp.window_size_scalefactor": "256",
+				"tcp.checksum": "0x0000b53f",
+				"tcp.checksum.status": "2",
+				"tcp.urgent_pointer": "0",
+				"tcp.analysis": {
+					"tcp.analysis.initial_rtt": "0.033315000",
+					"tcp.analysis.bytes_in_flight": "647",
+					"tcp.analysis.push_bytes_sent": "647"
+				},
+				"Timestamps": {
+					"tcp.time_relative": "0.034050000",
+					"tcp.time_delta": "0.000735000"
+				},
+				"tcp.payload": "47:45:54:20:2f:61:62:6f:75:74:73:74:79:6c:65:2f:69:6d:61:67:65:73:2f:6d:61:69:6e:2f:62:6f:61:72:64:5f:62:6f:78:2e:67:69:66:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:73:6f:63:69:61:6c:64:69:73:61:73:74:65:72:73:63:6f:6d:6d:69:73:73:69:6f:6e:2e:67:6f:2e:6b:72:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:6b:65:65:70:2d:61:6c:69:76:65:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:4d:6f:7a:69:6c:6c:61:2f:35:2e:30:20:28:57:69:6e:64:6f:77:73:20:4e:54:20:31:30:2e:30:3b:20:57:69:6e:36:34:3b:20:78:36:34:29:20:41:70:70:6c:65:57:65:62:4b:69:74:2f:35:33:37:2e:33:36:20:28:4b:48:54:4d:4c:2c:20:6c:69:6b:65:20:47:65:63:6b:6f:29:20:43:68:72:6f:6d:65:2f:39:32:2e:30:2e:34:35:31:35:2e:31:33:31:20:53:61:66:61:72:69:2f:35:33:37:2e:33:36:20:45:64:67:2f:39:32:2e:30:2e:39:30:32:2e:37:33:0d:0a:41:63:63:65:70:74:3a:20:69:6d:61:67:65:2f:77:65:62:70:2c:69:6d:61:67:65:2f:61:70:6e:67:2c:69:6d:61:67:65:2f:73:76:67:2b:78:6d:6c:2c:69:6d:61:67:65:2f:2a:2c:2a:2f:2a:3b:71:3d:30:2e:38:0d:0a:52:65:66:65:72:65:72:3a:20:68:74:74:70:3a:2f:2f:73:6f:63:69:61:6c:64:69:73:61:73:74:65:72:73:63:6f:6d:6d:69:73:73:69:6f:6e:2e:67:6f:2e:6b:72:2f:61:62:6f:75:74:73:74:79:6c:65:2f:63:73:73:2f:6d:61:69:6e:2e:63:73:73:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:67:7a:69:70:2c:20:64:65:66:6c:61:74:65:0d:0a:41:63:63:65:70:74:2d:4c:61:6e:67:75:61:67:65:3a:20:6b:6f:2c:65:6e:3b:71:3d:30:2e:39:2c:65:6e:2d:55:53:3b:71:3d:30:2e:38:0d:0a:43:6f:6f:6b:69:65:3a:20:4a:53:45:53:53:49:4f:4e:49:44:3d:6a:52:32:41:2b:52:38:33:4e:32:37:50:50:58:6f:70:2b:48:6e:35:6f:30:50:53:2e:73:74:61:6e:64:61:6c:6f:6e:65:31:3b:20:63:6c:69:65:6e:74:69:64:3d:30:33:30:30:33:38:35:35:36:35:36:31:3b:20:5f:67:61:3d:47:41:31:2e:33:2e:31:36:33:39:32:35:35:32:36:31:2e:31:36:32:39:30:33:32:37:38:34:3b:20:5f:67:69:64:3d:47:41:31:2e:33:2e:31:34:37:32:31:39:35:39:34:30:2e:31:36:32:39:30:33:32:37:38:34:3b:20:5f:67:61:74:5f:67:74:61:67:5f:55:41:5f:31:33:34:38:33:33:32:39:33:5f:31:3d:31:0d:0a:0d:0a"
+			},
+			"http": {
+				"GET /aboutstyle/images/main/board_box.gif HTTP/1.1\\r\\n": {
+					"_ws.expert": {
+						"http.chat": "",
+						"_ws.expert.message": "GET /aboutstyle/images/main/board_box.gif HTTP/1.1\\r\\n",
+						"_ws.expert.severity": "2097152",
+						"_ws.expert.group": "33554432"
+					},
+					"http.request.method": "GET",
+					"http.request.uri": "/aboutstyle/images/main/board_box.gif",
+					"http.request.version": "HTTP/1.1"
+				},
+				"http.host": "socialdisasterscommission.go.kr",
+				"http.request.line": "Cookie: JSESSIONID=jR2A+R83N27PPXop+Hn5o0PS.standalone1; clientid=030038556561; _ga=GA1.3.1639255261.1629032784; _gid=GA1.3.1472195940.1629032784; _gat_gtag_UA_134833293_1=1\r\n",
+				"http.connection": "keep-alive",
+				"http.user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73",
+				"http.accept": "image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+				"http.referer": "http://socialdisasterscommission.go.kr/aboutstyle/css/main.css",
+				"http.accept_encoding": "gzip, deflate",
+				"http.accept_language": "ko,en;q=0.9,en-US;q=0.8",
+				"http.cookie": "JSESSIONID=jR2A+R83N27PPXop+Hn5o0PS.standalone1; clientid=030038556561; _ga=GA1.3.1639255261.1629032784; _gid=GA1.3.1472195940.1629032784; _gat_gtag_UA_134833293_1=1",
+				"http.cookie_tree": {
+					"http.cookie_pair": "_gat_gtag_UA_134833293_1=1"
+				},
+				"\\r\\n": "",
+				"http.request.full_uri": "http://socialdisasterscommission.go.kr/aboutstyle/images/main/board_box.gif",
+				"http.request": "1",
+				"http.request_number": "1"
+			}
+		}
+	}
+}

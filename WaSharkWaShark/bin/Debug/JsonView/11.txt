@@ -1,1 +1,176 @@
-{'_index': 'packets-2021-08-15', '_type': 'doc', '_score': None, '_source': {'layers': {'frame': {'frame.interface_id': '0', 'frame.interface_id_tree': {'frame.interface_name': '\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}', 'frame.interface_description': 'Wi-Fi'}, 'frame.encap_type': '1', 'frame.time': 'Aug 15, 2021 22:05:34.729103000 대한민국 표준시', 'frame.offset_shift': '0.000000000', 'frame.time_epoch': '1629032734.729103000', 'frame.time_delta': '0.000000000', 'frame.time_delta_displayed': '0.006740000', 'frame.time_relative': '12.620260000', 'frame.number': '1513', 'frame.len': '558', 'frame.cap_len': '558', 'frame.marked': '0', 'frame.ignored': '0', 'frame.protocols': 'eth:ethertype:ip:tcp:http:data-text-lines'}, 'eth': {'eth.dst': '2c:8d:b1:e8:1b:92', 'eth.dst_tree': {'eth.dst_resolved': 'IntelCor_e8:1b:92', 'eth.dst.oui': '2919857', 'eth.dst.oui_resolved': 'Intel Corporate', 'eth.addr': '2c:8d:b1:e8:1b:92', 'eth.addr_resolved': 'IntelCor_e8:1b:92', 'eth.addr.oui': '2919857', 'eth.addr.oui_resolved': 'Intel Corporate', 'eth.dst.lg': '0', 'eth.lg': '0', 'eth.dst.ig': '0', 'eth.ig': '0'}, 'eth.src': '70:5d:cc:db:08:a8', 'eth.src_tree': {'eth.src_resolved': 'EFMNetwo_db:08:a8', 'eth.src.oui': '7364044', 'eth.src.oui_resolved': 'EFM Networks', 'eth.addr': '70:5d:cc:db:08:a8', 'eth.addr_resolved': 'EFMNetwo_db:08:a8', 'eth.addr.oui': '7364044', 'eth.addr.oui_resolved': 'EFM Networks', 'eth.src.lg': '0', 'eth.lg': '0', 'eth.src.ig': '0', 'eth.ig': '0'}, 'eth.type': '0x00000800'}, 'ip': {'ip.version': '4', 'ip.hdr_len': '20', 'ip.dsfield': '0x00000000', 'ip.dsfield_tree': {'ip.dsfield.dscp': '0', 'ip.dsfield.ecn': '0'}, 'ip.len': '544', 'ip.id': '0x000044f7', 'ip.flags': '0x00000040', 'ip.flags_tree': {'ip.flags.rb': '0', 'ip.flags.df': '1', 'ip.flags.mf': '0'}, 'ip.frag_offset': '0', 'ip.ttl': '47', 'ip.proto': '6', 'ip.checksum': '0x00004ffc', 'ip.checksum.status': '2', 'ip.src': '27.101.216.200', 'ip.addr': '192.168.0.15', 'ip.src_host': '27.101.216.200', 'ip.host': '192.168.0.15', 'ip.dst': '192.168.0.15', 'ip.dst_host': '192.168.0.15'}, 'tcp': {'tcp.srcport': '80', 'tcp.dstport': '58311', 'tcp.port': '58311', 'tcp.stream': '51', 'tcp.len': '504', 'tcp.seq': '1', 'tcp.seq_raw': '1539672398', 'tcp.nxtseq': '505', 'tcp.ack': '461', 'tcp.ack_raw': '3355573913', 'tcp.hdr_len': '20', 'tcp.flags': '0x00000018', 'tcp.flags_tree': {'tcp.flags.res': '0', 'tcp.flags.ns': '0', 'tcp.flags.cwr': '0', 'tcp.flags.ecn': '0', 'tcp.flags.urg': '0', 'tcp.flags.ack': '1', 'tcp.flags.push': '1', 'tcp.flags.reset': '0', 'tcp.flags.syn': '0', 'tcp.flags.fin': '0', 'tcp.flags.str': '·······AP···'}, 'tcp.window_size_value': '237', 'tcp.window_size': '30336', 'tcp.window_size_scalefactor': '128', 'tcp.checksum': '0x000016b5', 'tcp.checksum.status': '2', 'tcp.urgent_pointer': '0', 'tcp.analysis': {'tcp.analysis.initial_rtt': '0.007317000', 'tcp.analysis.bytes_in_flight': '504', 'tcp.analysis.push_bytes_sent': '504'}, 'Timestamps': {'tcp.time_relative': '0.027905000', 'tcp.time_delta': '0.009418000'}, 'tcp.payload': '48:54:54:50:2f:31:2e:31:20:32:30:30:20:4f:4b:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:35:3a:33:34:20:47:4d:54:0d:0a:53:65:72:76:65:72:3a:20:41:70:61:63:68:65:0d:0a:41:63:63:65:70:74:2d:52:61:6e:67:65:73:3a:20:62:79:74:65:73:0d:0a:45:54:61:67:3a:20:57:2f:22:32:31:38:2d:31:35:36:30:31:35:38:35:32:39:30:30:30:22:0d:0a:4c:61:73:74:2d:4d:6f:64:69:66:69:65:64:3a:20:4d:6f:6e:2c:20:31:30:20:4a:75:6e:20:32:30:31:39:20:30:39:3a:32:32:3a:30:39:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:32:31:38:0d:0a:4b:65:65:70:2d:41:6c:69:76:65:3a:20:74:69:6d:65:6f:75:74:3d:35:2c:20:6d:61:78:3d:31:30:30:30:30:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:4b:65:65:70:2d:41:6c:69:76:65:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:74:65:78:74:2f:63:73:73:3b:63:68:61:72:73:65:74:3d:55:54:46:2d:38:0d:0a:0d:0a:40:63:68:61:72:73:65:74:20:22:75:74:66:2d:38:22:3b:0a:0a:2f:2a:0a:20:e2:98:85:20:43:6f:64:69:6e:67:20:42:79:20:44:75:6d:69:43:6f:64:65:0a:20:e2:98:85:20:68:6f:6d:65:70:61:67:65:3a:20:68:74:74:70:3a:2f:2f:77:77:77:2e:64:75:6d:69:63:6f:64:65:2e:63:6f:6d:0a:2a:2f:0a:0a:2f:2a:20:66:6f:6e:74:20:2a:2f:0a:40:69:6d:70:6f:72:74:20:75:72:6c:28:22:6e:6f:74:6f:73:61:6e:73:6b:72:2e:63:73:73:22:29:3b:0a:0a:2f:2a:20:64:65:66:61:75:6c:74:20:73:65:74:20:2a:2f:0a:40:69:6d:70:6f:72:74:20:75:72:6c:28:22:62:61:73:65:32:30:31:38:2e:63:73:73:22:29:3b:0a:0a:2f:2a:20:63:6f:6d:6d:6f:6e:2a:2f:0a:40:69:6d:70:6f:72:74:20:75:72:6c:28:22:63:6f:6d:6d:6f:6e:2e:63:73:73:22:29:3b'}, 'http': {'HTTP/1.1 200 OK\\r\\n': {'_ws.expert': {'http.chat': '', '_ws.expert.message': 'HTTP/1.1 200 OK\\r\\n', '_ws.expert.severity': '2097152', '_ws.expert.group': '33554432'}, 'http.response.version': 'HTTP/1.1', 'http.response.code': '200', 'http.response.code.desc': 'OK', 'http.response.phrase': 'OK'}, 'http.date': 'Sun, 15 Aug 2021 13:05:34 GMT', 'http.response.line': 'Content-Type: text/css;charset=UTF-8\r\n', 'http.server': 'Apache', 'http.last_modified': 'Mon, 10 Jun 2019 09:22:09 GMT', 'http.content_length_header': '218', 'http.content_length_header_tree': {'http.content_length': '218'}, 'http.connection': 'Keep-Alive', 'http.content_type': 'text/css;charset=UTF-8', '\\r\\n': '', 'http.response': '1', 'http.response_number': '1', 'http.time': '0.020366000', 'http.request_in': '1339', 'http.response_for.uri': 'http://me.go.kr/css/home2018/style.css', 'http.file_data': '@charset "utf-8";\n\n/*\n ��� Coding By DumiCode\n ��� homepage: http://www.dumicode.com\n*/\n\n/* font */\n@import url("notosanskr.css");\n\n/* default set */\n@import url("base2018.css");\n\n/* common*/\n@import url("common.css");'}, 'data-text-lines': {'@charset "utf-8";\\n': '', '\\n': '', '/*\\n': '', ' ★ Coding By DumiCode\\n': '', ' ★ homepage: http://www.dumicode.com\\n': '', '*/\\n': '', '/* font */\\n': '', '@import url("notosanskr.css");\\n': '', '/* default set */\\n': '', '@import url("base2018.css");\\n': '', '/* common*/\\n': '', '@import url("common.css");': ''}}}}
+{
+	"_index": "packets-2021-08-15",
+	"_type": "doc",
+	"_score": null,
+	"_source": {
+		"layers": {
+			"frame": {
+				"frame.interface_id": "0",
+				"frame.interface_id_tree": {
+					"frame.interface_name": "\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}",
+					"frame.interface_description": "Wi-Fi"
+				},
+				"frame.encap_type": "1",
+				"frame.time": "Aug 15, 2021 22:05:34.729103000 대한민국 표준시",
+				"frame.offset_shift": "0.000000000",
+				"frame.time_epoch": "1629032734.729103000",
+				"frame.time_delta": "0.000000000",
+				"frame.time_delta_displayed": "0.006740000",
+				"frame.time_relative": "12.620260000",
+				"frame.number": "1513",
+				"frame.len": "558",
+				"frame.cap_len": "558",
+				"frame.marked": "0",
+				"frame.ignored": "0",
+				"frame.protocols": "eth:ethertype:ip:tcp:http:data-text-lines"
+			},
+			"eth": {
+				"eth.dst": "2c:8d:b1:e8:1b:92",
+				"eth.dst_tree": {
+					"eth.dst_resolved": "IntelCor_e8:1b:92",
+					"eth.dst.oui": "2919857",
+					"eth.dst.oui_resolved": "Intel Corporate",
+					"eth.addr": "2c:8d:b1:e8:1b:92",
+					"eth.addr_resolved": "IntelCor_e8:1b:92",
+					"eth.addr.oui": "2919857",
+					"eth.addr.oui_resolved": "Intel Corporate",
+					"eth.dst.lg": "0",
+					"eth.lg": "0",
+					"eth.dst.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.src": "70:5d:cc:db:08:a8",
+				"eth.src_tree": {
+					"eth.src_resolved": "EFMNetwo_db:08:a8",
+					"eth.src.oui": "7364044",
+					"eth.src.oui_resolved": "EFM Networks",
+					"eth.addr": "70:5d:cc:db:08:a8",
+					"eth.addr_resolved": "EFMNetwo_db:08:a8",
+					"eth.addr.oui": "7364044",
+					"eth.addr.oui_resolved": "EFM Networks",
+					"eth.src.lg": "0",
+					"eth.lg": "0",
+					"eth.src.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.type": "0x00000800"
+			},
+			"ip": {
+				"ip.version": "4",
+				"ip.hdr_len": "20",
+				"ip.dsfield": "0x00000000",
+				"ip.dsfield_tree": {
+					"ip.dsfield.dscp": "0",
+					"ip.dsfield.ecn": "0"
+				},
+				"ip.len": "544",
+				"ip.id": "0x000044f7",
+				"ip.flags": "0x00000040",
+				"ip.flags_tree": {
+					"ip.flags.rb": "0",
+					"ip.flags.df": "1",
+					"ip.flags.mf": "0"
+				},
+				"ip.frag_offset": "0",
+				"ip.ttl": "47",
+				"ip.proto": "6",
+				"ip.checksum": "0x00004ffc",
+				"ip.checksum.status": "2",
+				"ip.src": "27.101.216.200",
+				"ip.addr": "192.168.0.15",
+				"ip.src_host": "27.101.216.200",
+				"ip.host": "192.168.0.15",
+				"ip.dst": "192.168.0.15",
+				"ip.dst_host": "192.168.0.15"
+			},
+			"tcp": {
+				"tcp.srcport": "80",
+				"tcp.dstport": "58311",
+				"tcp.port": "58311",
+				"tcp.stream": "51",
+				"tcp.len": "504",
+				"tcp.seq": "1",
+				"tcp.seq_raw": "1539672398",
+				"tcp.nxtseq": "505",
+				"tcp.ack": "461",
+				"tcp.ack_raw": "3355573913",
+				"tcp.hdr_len": "20",
+				"tcp.flags": "0x00000018",
+				"tcp.flags_tree": {
+					"tcp.flags.res": "0",
+					"tcp.flags.ns": "0",
+					"tcp.flags.cwr": "0",
+					"tcp.flags.ecn": "0",
+					"tcp.flags.urg": "0",
+					"tcp.flags.ack": "1",
+					"tcp.flags.push": "1",
+					"tcp.flags.reset": "0",
+					"tcp.flags.syn": "0",
+					"tcp.flags.fin": "0",
+					"tcp.flags.str": "·······AP···"
+				},
+				"tcp.window_size_value": "237",
+				"tcp.window_size": "30336",
+				"tcp.window_size_scalefactor": "128",
+				"tcp.checksum": "0x000016b5",
+				"tcp.checksum.status": "2",
+				"tcp.urgent_pointer": "0",
+				"tcp.analysis": {
+					"tcp.analysis.initial_rtt": "0.007317000",
+					"tcp.analysis.bytes_in_flight": "504",
+					"tcp.analysis.push_bytes_sent": "504"
+				},
+				"Timestamps": {
+					"tcp.time_relative": "0.027905000",
+					"tcp.time_delta": "0.009418000"
+				},
+				"tcp.payload": "48:54:54:50:2f:31:2e:31:20:32:30:30:20:4f:4b:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:35:3a:33:34:20:47:4d:54:0d:0a:53:65:72:76:65:72:3a:20:41:70:61:63:68:65:0d:0a:41:63:63:65:70:74:2d:52:61:6e:67:65:73:3a:20:62:79:74:65:73:0d:0a:45:54:61:67:3a:20:57:2f:22:32:31:38:2d:31:35:36:30:31:35:38:35:32:39:30:30:30:22:0d:0a:4c:61:73:74:2d:4d:6f:64:69:66:69:65:64:3a:20:4d:6f:6e:2c:20:31:30:20:4a:75:6e:20:32:30:31:39:20:30:39:3a:32:32:3a:30:39:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:32:31:38:0d:0a:4b:65:65:70:2d:41:6c:69:76:65:3a:20:74:69:6d:65:6f:75:74:3d:35:2c:20:6d:61:78:3d:31:30:30:30:30:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:4b:65:65:70:2d:41:6c:69:76:65:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:74:65:78:74:2f:63:73:73:3b:63:68:61:72:73:65:74:3d:55:54:46:2d:38:0d:0a:0d:0a:40:63:68:61:72:73:65:74:20:22:75:74:66:2d:38:22:3b:0a:0a:2f:2a:0a:20:e2:98:85:20:43:6f:64:69:6e:67:20:42:79:20:44:75:6d:69:43:6f:64:65:0a:20:e2:98:85:20:68:6f:6d:65:70:61:67:65:3a:20:68:74:74:70:3a:2f:2f:77:77:77:2e:64:75:6d:69:63:6f:64:65:2e:63:6f:6d:0a:2a:2f:0a:0a:2f:2a:20:66:6f:6e:74:20:2a:2f:0a:40:69:6d:70:6f:72:74:20:75:72:6c:28:22:6e:6f:74:6f:73:61:6e:73:6b:72:2e:63:73:73:22:29:3b:0a:0a:2f:2a:20:64:65:66:61:75:6c:74:20:73:65:74:20:2a:2f:0a:40:69:6d:70:6f:72:74:20:75:72:6c:28:22:62:61:73:65:32:30:31:38:2e:63:73:73:22:29:3b:0a:0a:2f:2a:20:63:6f:6d:6d:6f:6e:2a:2f:0a:40:69:6d:70:6f:72:74:20:75:72:6c:28:22:63:6f:6d:6d:6f:6e:2e:63:73:73:22:29:3b"
+			},
+			"http": {
+				"HTTP/1.1 200 OK\\r\\n": {
+					"_ws.expert": {
+						"http.chat": "",
+						"_ws.expert.message": "HTTP/1.1 200 OK\\r\\n",
+						"_ws.expert.severity": "2097152",
+						"_ws.expert.group": "33554432"
+					},
+					"http.response.version": "HTTP/1.1",
+					"http.response.code": "200",
+					"http.response.code.desc": "OK",
+					"http.response.phrase": "OK"
+				},
+				"http.date": "Sun, 15 Aug 2021 13:05:34 GMT",
+				"http.response.line": "Content-Type: text/css;charset=UTF-8\r\n",
+				"http.server": "Apache",
+				"http.last_modified": "Mon, 10 Jun 2019 09:22:09 GMT",
+				"http.content_length_header": "218",
+				"http.content_length_header_tree": {
+					"http.content_length": "218"
+				},
+				"http.connection": "Keep-Alive",
+				"http.content_type": "text/css;charset=UTF-8",
+				"\\r\\n": "",
+				"http.response": "1",
+				"http.response_number": "1",
+				"http.time": "0.020366000",
+				"http.request_in": "1339",
+				"http.response_for.uri": "http://me.go.kr/css/home2018/style.css",
+				"http.file_data": "@charset \"utf-8\";\n\n/*\n ��� Coding By DumiCode\n ��� homepage: http://www.dumicode.com\n*/\n\n/* font */\n@import url(\"notosanskr.css\");\n\n/* default set */\n@import url(\"base2018.css\");\n\n/* common*/\n@import url(\"common.css\");"
+			},
+			"data-text-lines": {
+				"@charset \"utf-8\";\\n": "",
+				"\\n": "",
+				"/*\\n": "",
+				" ★ Coding By DumiCode\\n": "",
+				" ★ homepage: http://www.dumicode.com\\n": "",
+				"*/\\n": "",
+				"/* font */\\n": "",
+				"@import url(\"notosanskr.css\");\\n": "",
+				"/* default set */\\n": "",
+				"@import url(\"base2018.css\");\\n": "",
+				"/* common*/\\n": "",
+				"@import url(\"common.css\");": ""
+			}
+		}
+	}
+}

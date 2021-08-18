@@ -28,24 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtLog = new System.Windows.Forms.TextBox();
             this.lblText = new System.Windows.Forms.Label();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.sfd = new System.Windows.Forms.SaveFileDialog();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txtLog = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // txtLog
-            // 
-            this.txtLog.Location = new System.Drawing.Point(23, 50);
-            this.txtLog.Multiline = true;
-            this.txtLog.Name = "txtLog";
-            this.txtLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtLog.Size = new System.Drawing.Size(733, 458);
-            this.txtLog.TabIndex = 0;
-            this.txtLog.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblText
             // 
@@ -80,15 +69,25 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // txtLog
+            // 
+            this.txtLog.Location = new System.Drawing.Point(12, 50);
+            this.txtLog.Multiline = true;
+            this.txtLog.Name = "txtLog";
+            this.txtLog.ReadOnly = true;
+            this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtLog.Size = new System.Drawing.Size(744, 453);
+            this.txtLog.TabIndex = 4;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(768, 551);
+            this.Controls.Add(this.txtLog);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblText);
-            this.Controls.Add(this.txtLog);
             this.Name = "Form2";
             this.Text = "Packet Details";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -98,12 +97,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtLog;
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.OpenFileDialog ofd;
         private System.Windows.Forms.SaveFileDialog sfd;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.TextBox txtLog;
     }
 }

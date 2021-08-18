@@ -1,1 +1,161 @@
-{'_index': 'packets-2021-08-15', '_type': 'doc', '_score': None, '_source': {'layers': {'frame': {'frame.interface_id': '0', 'frame.interface_id_tree': {'frame.interface_name': '\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}', 'frame.interface_description': 'Wi-Fi'}, 'frame.encap_type': '1', 'frame.time': 'Aug 15, 2021 22:06:18.808575000 대한민국 표준시', 'frame.offset_shift': '0.000000000', 'frame.time_epoch': '1629032778.808575000', 'frame.time_delta': '0.001151000', 'frame.time_delta_displayed': '0.005945000', 'frame.time_relative': '56.699732000', 'frame.number': '8494', 'frame.len': '303', 'frame.cap_len': '303', 'frame.marked': '0', 'frame.ignored': '0', 'frame.protocols': 'eth:ethertype:ip:tcp:http'}, 'eth': {'eth.dst': '2c:8d:b1:e8:1b:92', 'eth.dst_tree': {'eth.dst_resolved': 'IntelCor_e8:1b:92', 'eth.dst.oui': '2919857', 'eth.dst.oui_resolved': 'Intel Corporate', 'eth.addr': '2c:8d:b1:e8:1b:92', 'eth.addr_resolved': 'IntelCor_e8:1b:92', 'eth.addr.oui': '2919857', 'eth.addr.oui_resolved': 'Intel Corporate', 'eth.dst.lg': '0', 'eth.lg': '0', 'eth.dst.ig': '0', 'eth.ig': '0'}, 'eth.src': '70:5d:cc:db:08:a8', 'eth.src_tree': {'eth.src_resolved': 'EFMNetwo_db:08:a8', 'eth.src.oui': '7364044', 'eth.src.oui_resolved': 'EFM Networks', 'eth.addr': '70:5d:cc:db:08:a8', 'eth.addr_resolved': 'EFMNetwo_db:08:a8', 'eth.addr.oui': '7364044', 'eth.addr.oui_resolved': 'EFM Networks', 'eth.src.lg': '0', 'eth.lg': '0', 'eth.src.ig': '0', 'eth.ig': '0'}, 'eth.type': '0x00000800'}, 'ip': {'ip.version': '4', 'ip.hdr_len': '20', 'ip.dsfield': '0x00000000', 'ip.dsfield_tree': {'ip.dsfield.dscp': '0', 'ip.dsfield.ecn': '0'}, 'ip.len': '289', 'ip.id': '0x0000c0ec', 'ip.flags': '0x00000040', 'ip.flags_tree': {'ip.flags.rb': '0', 'ip.flags.df': '1', 'ip.flags.mf': '0'}, 'ip.frag_offset': '0', 'ip.ttl': '47', 'ip.proto': '6', 'ip.checksum': '0x0000dd2c', 'ip.checksum.status': '2', 'ip.src': '27.101.208.161', 'ip.addr': '192.168.0.15', 'ip.src_host': '27.101.208.161', 'ip.host': '192.168.0.15', 'ip.dst': '192.168.0.15', 'ip.dst_host': '192.168.0.15'}, 'tcp': {'tcp.srcport': '80', 'tcp.dstport': '60008', 'tcp.port': '60008', 'tcp.stream': '101', 'tcp.len': '249', 'tcp.seq': '1', 'tcp.seq_raw': '487141127', 'tcp.nxtseq': '250', 'tcp.ack': '447', 'tcp.ack_raw': '349372215', 'tcp.hdr_len': '20', 'tcp.flags': '0x00000018', 'tcp.flags_tree': {'tcp.flags.res': '0', 'tcp.flags.ns': '0', 'tcp.flags.cwr': '0', 'tcp.flags.ecn': '0', 'tcp.flags.urg': '0', 'tcp.flags.ack': '1', 'tcp.flags.push': '1', 'tcp.flags.reset': '0', 'tcp.flags.syn': '0', 'tcp.flags.fin': '0', 'tcp.flags.str': '·······AP···'}, 'tcp.window_size_value': '16', 'tcp.window_size': '16384', 'tcp.window_size_scalefactor': '1024', 'tcp.checksum': '0x00001726', 'tcp.checksum.status': '2', 'tcp.urgent_pointer': '0', 'tcp.analysis': {'tcp.analysis.initial_rtt': '0.029130000', 'tcp.analysis.bytes_in_flight': '249', 'tcp.analysis.push_bytes_sent': '249'}, 'Timestamps': {'tcp.time_relative': '0.075053000', 'tcp.time_delta': '0.001151000'}, 'tcp.payload': '48:54:54:50:2f:31:2e:31:20:33:30:32:20:4d:6f:76:65:64:20:54:65:6d:70:6f:72:61:72:69:6c:79:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:36:3a:31:38:20:47:4d:54:0d:0a:53:65:72:76:65:72:3a:20:41:70:61:63:68:65:0d:0a:4c:6f:63:61:74:69:6f:6e:3a:20:68:74:74:70:3a:2f:2f:77:77:77:2e:62:61:69:2e:67:6f:2e:6b:72:2f:62:61:69:2f:69:6e:64:65:78:2e:64:6f:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:30:0d:0a:4b:65:65:70:2d:41:6c:69:76:65:3a:20:74:69:6d:65:6f:75:74:3d:35:2c:20:6d:61:78:3d:31:30:30:30:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:4b:65:65:70:2d:41:6c:69:76:65:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:74:65:78:74:2f:70:6c:61:69:6e:3b:20:63:68:61:72:73:65:74:3d:55:54:46:2d:38:0d:0a:0d:0a'}, 'http': {'HTTP/1.1 302 Moved Temporarily\\r\\n': {'_ws.expert': {'http.chat': '', '_ws.expert.message': 'HTTP/1.1 302 Moved Temporarily\\r\\n', '_ws.expert.severity': '2097152', '_ws.expert.group': '33554432'}, 'http.response.version': 'HTTP/1.1', 'http.response.code': '302', 'http.response.code.desc': 'Found', 'http.response.phrase': 'Moved Temporarily'}, 'http.date': 'Sun, 15 Aug 2021 13:06:18 GMT', 'http.response.line': 'Content-Type: text/plain; charset=UTF-8\r\n', 'http.server': 'Apache', 'http.location': 'http://www.bai.go.kr/bai/index.do', 'http.content_length_header': '0', 'http.content_length_header_tree': {'http.content_length': '0'}, 'http.connection': 'Keep-Alive', 'http.content_type': 'text/plain; charset=UTF-8', '\\r\\n': '', 'http.response': '1', 'http.response_number': '1', 'http.time': '0.013749000', 'http.request_in': '8491', 'http.response_for.uri': 'http://www.bai.go.kr/'}}}}
+{
+	"_index": "packets-2021-08-15",
+	"_type": "doc",
+	"_score": null,
+	"_source": {
+		"layers": {
+			"frame": {
+				"frame.interface_id": "0",
+				"frame.interface_id_tree": {
+					"frame.interface_name": "\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}",
+					"frame.interface_description": "Wi-Fi"
+				},
+				"frame.encap_type": "1",
+				"frame.time": "Aug 15, 2021 22:06:18.808575000 대한민국 표준시",
+				"frame.offset_shift": "0.000000000",
+				"frame.time_epoch": "1629032778.808575000",
+				"frame.time_delta": "0.001151000",
+				"frame.time_delta_displayed": "0.005945000",
+				"frame.time_relative": "56.699732000",
+				"frame.number": "8494",
+				"frame.len": "303",
+				"frame.cap_len": "303",
+				"frame.marked": "0",
+				"frame.ignored": "0",
+				"frame.protocols": "eth:ethertype:ip:tcp:http"
+			},
+			"eth": {
+				"eth.dst": "2c:8d:b1:e8:1b:92",
+				"eth.dst_tree": {
+					"eth.dst_resolved": "IntelCor_e8:1b:92",
+					"eth.dst.oui": "2919857",
+					"eth.dst.oui_resolved": "Intel Corporate",
+					"eth.addr": "2c:8d:b1:e8:1b:92",
+					"eth.addr_resolved": "IntelCor_e8:1b:92",
+					"eth.addr.oui": "2919857",
+					"eth.addr.oui_resolved": "Intel Corporate",
+					"eth.dst.lg": "0",
+					"eth.lg": "0",
+					"eth.dst.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.src": "70:5d:cc:db:08:a8",
+				"eth.src_tree": {
+					"eth.src_resolved": "EFMNetwo_db:08:a8",
+					"eth.src.oui": "7364044",
+					"eth.src.oui_resolved": "EFM Networks",
+					"eth.addr": "70:5d:cc:db:08:a8",
+					"eth.addr_resolved": "EFMNetwo_db:08:a8",
+					"eth.addr.oui": "7364044",
+					"eth.addr.oui_resolved": "EFM Networks",
+					"eth.src.lg": "0",
+					"eth.lg": "0",
+					"eth.src.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.type": "0x00000800"
+			},
+			"ip": {
+				"ip.version": "4",
+				"ip.hdr_len": "20",
+				"ip.dsfield": "0x00000000",
+				"ip.dsfield_tree": {
+					"ip.dsfield.dscp": "0",
+					"ip.dsfield.ecn": "0"
+				},
+				"ip.len": "289",
+				"ip.id": "0x0000c0ec",
+				"ip.flags": "0x00000040",
+				"ip.flags_tree": {
+					"ip.flags.rb": "0",
+					"ip.flags.df": "1",
+					"ip.flags.mf": "0"
+				},
+				"ip.frag_offset": "0",
+				"ip.ttl": "47",
+				"ip.proto": "6",
+				"ip.checksum": "0x0000dd2c",
+				"ip.checksum.status": "2",
+				"ip.src": "27.101.208.161",
+				"ip.addr": "192.168.0.15",
+				"ip.src_host": "27.101.208.161",
+				"ip.host": "192.168.0.15",
+				"ip.dst": "192.168.0.15",
+				"ip.dst_host": "192.168.0.15"
+			},
+			"tcp": {
+				"tcp.srcport": "80",
+				"tcp.dstport": "60008",
+				"tcp.port": "60008",
+				"tcp.stream": "101",
+				"tcp.len": "249",
+				"tcp.seq": "1",
+				"tcp.seq_raw": "487141127",
+				"tcp.nxtseq": "250",
+				"tcp.ack": "447",
+				"tcp.ack_raw": "349372215",
+				"tcp.hdr_len": "20",
+				"tcp.flags": "0x00000018",
+				"tcp.flags_tree": {
+					"tcp.flags.res": "0",
+					"tcp.flags.ns": "0",
+					"tcp.flags.cwr": "0",
+					"tcp.flags.ecn": "0",
+					"tcp.flags.urg": "0",
+					"tcp.flags.ack": "1",
+					"tcp.flags.push": "1",
+					"tcp.flags.reset": "0",
+					"tcp.flags.syn": "0",
+					"tcp.flags.fin": "0",
+					"tcp.flags.str": "·······AP···"
+				},
+				"tcp.window_size_value": "16",
+				"tcp.window_size": "16384",
+				"tcp.window_size_scalefactor": "1024",
+				"tcp.checksum": "0x00001726",
+				"tcp.checksum.status": "2",
+				"tcp.urgent_pointer": "0",
+				"tcp.analysis": {
+					"tcp.analysis.initial_rtt": "0.029130000",
+					"tcp.analysis.bytes_in_flight": "249",
+					"tcp.analysis.push_bytes_sent": "249"
+				},
+				"Timestamps": {
+					"tcp.time_relative": "0.075053000",
+					"tcp.time_delta": "0.001151000"
+				},
+				"tcp.payload": "48:54:54:50:2f:31:2e:31:20:33:30:32:20:4d:6f:76:65:64:20:54:65:6d:70:6f:72:61:72:69:6c:79:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:36:3a:31:38:20:47:4d:54:0d:0a:53:65:72:76:65:72:3a:20:41:70:61:63:68:65:0d:0a:4c:6f:63:61:74:69:6f:6e:3a:20:68:74:74:70:3a:2f:2f:77:77:77:2e:62:61:69:2e:67:6f:2e:6b:72:2f:62:61:69:2f:69:6e:64:65:78:2e:64:6f:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:30:0d:0a:4b:65:65:70:2d:41:6c:69:76:65:3a:20:74:69:6d:65:6f:75:74:3d:35:2c:20:6d:61:78:3d:31:30:30:30:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:4b:65:65:70:2d:41:6c:69:76:65:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:74:65:78:74:2f:70:6c:61:69:6e:3b:20:63:68:61:72:73:65:74:3d:55:54:46:2d:38:0d:0a:0d:0a"
+			},
+			"http": {
+				"HTTP/1.1 302 Moved Temporarily\\r\\n": {
+					"_ws.expert": {
+						"http.chat": "",
+						"_ws.expert.message": "HTTP/1.1 302 Moved Temporarily\\r\\n",
+						"_ws.expert.severity": "2097152",
+						"_ws.expert.group": "33554432"
+					},
+					"http.response.version": "HTTP/1.1",
+					"http.response.code": "302",
+					"http.response.code.desc": "Found",
+					"http.response.phrase": "Moved Temporarily"
+				},
+				"http.date": "Sun, 15 Aug 2021 13:06:18 GMT",
+				"http.response.line": "Content-Type: text/plain; charset=UTF-8\r\n",
+				"http.server": "Apache",
+				"http.location": "http://www.bai.go.kr/bai/index.do",
+				"http.content_length_header": "0",
+				"http.content_length_header_tree": {
+					"http.content_length": "0"
+				},
+				"http.connection": "Keep-Alive",
+				"http.content_type": "text/plain; charset=UTF-8",
+				"\\r\\n": "",
+				"http.response": "1",
+				"http.response_number": "1",
+				"http.time": "0.013749000",
+				"http.request_in": "8491",
+				"http.response_for.uri": "http://www.bai.go.kr/"
+			}
+		}
+	}
+}

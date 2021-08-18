@@ -1,1 +1,219 @@
-{'_index': 'packets-2021-08-15', '_type': 'doc', '_score': None, '_source': {'layers': {'frame': {'frame.interface_id': '0', 'frame.interface_id_tree': {'frame.interface_name': '\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}', 'frame.interface_description': 'Wi-Fi'}, 'frame.encap_type': '1', 'frame.time': 'Aug 15, 2021 22:05:35.004286000 대한민국 표준시', 'frame.offset_shift': '0.000000000', 'frame.time_epoch': '1629032735.004286000', 'frame.time_delta': '0.000000000', 'frame.time_delta_displayed': '0.000000000', 'frame.time_relative': '12.895443000', 'frame.number': '3969', 'frame.len': '972', 'frame.cap_len': '972', 'frame.marked': '0', 'frame.ignored': '0', 'frame.protocols': 'eth:ethertype:ip:tcp:http:png'}, 'eth': {'eth.dst': '2c:8d:b1:e8:1b:92', 'eth.dst_tree': {'eth.dst_resolved': 'IntelCor_e8:1b:92', 'eth.dst.oui': '2919857', 'eth.dst.oui_resolved': 'Intel Corporate', 'eth.addr': '2c:8d:b1:e8:1b:92', 'eth.addr_resolved': 'IntelCor_e8:1b:92', 'eth.addr.oui': '2919857', 'eth.addr.oui_resolved': 'Intel Corporate', 'eth.dst.lg': '0', 'eth.lg': '0', 'eth.dst.ig': '0', 'eth.ig': '0'}, 'eth.src': '70:5d:cc:db:08:a8', 'eth.src_tree': {'eth.src_resolved': 'EFMNetwo_db:08:a8', 'eth.src.oui': '7364044', 'eth.src.oui_resolved': 'EFM Networks', 'eth.addr': '70:5d:cc:db:08:a8', 'eth.addr_resolved': 'EFMNetwo_db:08:a8', 'eth.addr.oui': '7364044', 'eth.addr.oui_resolved': 'EFM Networks', 'eth.src.lg': '0', 'eth.lg': '0', 'eth.src.ig': '0', 'eth.ig': '0'}, 'eth.type': '0x00000800'}, 'ip': {'ip.version': '4', 'ip.hdr_len': '20', 'ip.dsfield': '0x00000000', 'ip.dsfield_tree': {'ip.dsfield.dscp': '0', 'ip.dsfield.ecn': '0'}, 'ip.len': '958', 'ip.id': '0x0000f9a0', 'ip.flags': '0x00000040', 'ip.flags_tree': {'ip.flags.rb': '0', 'ip.flags.df': '1', 'ip.flags.mf': '0'}, 'ip.frag_offset': '0', 'ip.ttl': '47', 'ip.proto': '6', 'ip.checksum': '0x000099b4', 'ip.checksum.status': '2', 'ip.src': '27.101.216.200', 'ip.addr': '192.168.0.15', 'ip.src_host': '27.101.216.200', 'ip.host': '192.168.0.15', 'ip.dst': '192.168.0.15', 'ip.dst_host': '192.168.0.15'}, 'tcp': {'tcp.srcport': '80', 'tcp.dstport': '63972', 'tcp.port': '63972', 'tcp.stream': '48', 'tcp.len': '918', 'tcp.seq': '494259', 'tcp.seq_raw': '3626378653', 'tcp.nxtseq': '495177', 'tcp.ack': '4533', 'tcp.ack_raw': '4001847560', 'tcp.hdr_len': '20', 'tcp.flags': '0x00000018', 'tcp.flags_tree': {'tcp.flags.res': '0', 'tcp.flags.ns': '0', 'tcp.flags.cwr': '0', 'tcp.flags.ecn': '0', 'tcp.flags.urg': '0', 'tcp.flags.ack': '1', 'tcp.flags.push': '1', 'tcp.flags.reset': '0', 'tcp.flags.syn': '0', 'tcp.flags.fin': '0', 'tcp.flags.str': '·······AP···'}, 'tcp.window_size_value': '304', 'tcp.window_size': '38912', 'tcp.window_size_scalefactor': '128', 'tcp.checksum': '0x0000fc6e', 'tcp.checksum.status': '2', 'tcp.urgent_pointer': '0', 'tcp.analysis': {'tcp.analysis.acks_frame': '3853', 'tcp.analysis.ack_rtt': '0.020866000', 'tcp.analysis.initial_rtt': '0.027221000', 'tcp.analysis.bytes_in_flight': '918', 'tcp.analysis.push_bytes_sent': '918'}, 'Timestamps': {'tcp.time_relative': '2.616791000', 'tcp.time_delta': '0.020866000'}, 'tcp.payload': '48:54:54:50:2f:31:2e:31:20:32:30:30:20:4f:4b:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:35:3a:33:35:20:47:4d:54:0d:0a:53:65:72:76:65:72:3a:20:41:70:61:63:68:65:0d:0a:41:63:63:65:70:74:2d:52:61:6e:67:65:73:3a:20:62:79:74:65:73:0d:0a:45:54:61:67:3a:20:57:2f:22:36:33:32:2d:31:35:39:30:34:36:36:31:38:39:30:30:30:22:0d:0a:4c:61:73:74:2d:4d:6f:64:69:66:69:65:64:3a:20:54:75:65:2c:20:32:36:20:4d:61:79:20:32:30:32:30:20:30:34:3a:30:39:3a:34:39:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:36:33:32:0d:0a:4b:65:65:70:2d:41:6c:69:76:65:3a:20:74:69:6d:65:6f:75:74:3d:35:2c:20:6d:61:78:3d:39:39:39:32:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:4b:65:65:70:2d:41:6c:69:76:65:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:69:6d:61:67:65:2f:70:6e:67:3b:63:68:61:72:73:65:74:3d:55:54:46:2d:38:0d:0a:0d:0a:89:50:4e:47:0d:0a:1a:0a:00:00:00:0d:49:48:44:52:00:00:00:33:00:00:00:1c:08:03:00:00:00:fb:85:77:fb:00:00:00:75:50:4c:54:45:00:00:00:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:e5:8b:66:40:00:00:00:26:74:52:4e:53:00:d9:cb:eb:e6:b8:f6:d1:1e:e3:4c:f9:c4:b0:de:0a:04:71:a7:a3:63:9e:9a:3f:33:f1:bc:6d:ac:79:46:2d:15:8e:38:12:82:27:85:d3:a4:ed:00:00:01:8c:49:44:41:54:38:cb:9d:94:d9:76:a3:30:0c:40:25:cb:0b:0e:06:42:d8:02:24:84:24:13:fd:ff:27:8e:59:e6:4c:db:e0:9e:d2:fb:c0:c1:a0:6b:d9:06:09:de:88:ca:a2:33:a9:9c:49:85:ba:37:19:7c:c3:f1:96:5f:1c:b6:cc:da:1a:31:83:92:99:a5:17:87:80:f8:c0:98:b9:45:77:ca:6f:47:58:c9:86:bb:12:93:68:af:9b:8e:8b:5d:55:46:f0:4e:d6:dc:15:d9:cd:4c:98:fa:cb:b3:b9:16:4a:58:5a:90:d8:9d:ae:8f:29:5a:e9:68:cb:b1:6d:e2:90:98:39:96:46:ac:a4:7a:1e:76:05:6e:3b:31:33:a1:53:75:39:6f:67:e5:55:d6:3e:ad:7f:c5:e7:cf:eb:2d:ab:c4:a3:db:e1:19:38:d0:57:4f:dc:f9:90:aa:cc:96:07:b5:e5:05:0d:61:88:17:6c:3d:2d:42:b1:4d:f2:83:c7:a6:10:a6:8b:4b:1f:92:27:96:15:40:ce:b8:ee:0e:31:68:fc:3f:b7:08:39:07:a7:1b:d8:e1:40:a3:1d:a4:08:3b:9c:e5:33:4a:b1:d3:11:f2:57:79:04:8d:bb:9c:91:04:14:5c:ed:72:2a:2e:20:92:94:ef:70:72:92:fe:a6:a7:d8:5c:4e:9e:56:42:18:c1:89:0f:b9:98:98:7a:f0:0c:8e:7e:fc:ef:90:1b:60:61:6c:0e:1e:a2:43:b4:2d:64:e7:2b:71:e9:43:9a:f1:bd:16:da:54:a8:22:7f:64:1f:5a:44:ef:3b:8a:5c:6a:61:83:94:2e:0e:e7:d7:84:66:c5:fa:a1:b6:42:55:46:47:c1:da:ce:ce:7d:a5:04:fe:c3:a8:a2:bf:1d:c3:b5:ed:62:57:1f:9e:5b:25:77:fe:93:90:cd:82:bd:8a:8c:fa:24:be:7c:cb:b3:f1:da:ab:02:f3:09:3b:89:28:16:4c:aa:a7:91:9f:66:cd:12:16:1d:ca:05:8b:ae:28:47:f8:c2:5f:1d:ac:20:2d:7f:41:c3:9b:00:00:00:00:49:45:4e:44:ae:42:60:82'}, 'http': {'HTTP/1.1 200 OK\\r\\n': {'_ws.expert': {'http.chat': '', '_ws.expert.message': 'HTTP/1.1 200 OK\\r\\n', '_ws.expert.severity': '2097152', '_ws.expert.group': '33554432'}, 'http.response.version': 'HTTP/1.1', 'http.response.code': '200', 'http.response.code.desc': 'OK', 'http.response.phrase': 'OK'}, 'http.date': 'Sun, 15 Aug 2021 13:05:35 GMT', 'http.response.line': 'Content-Type: image/png;charset=UTF-8\r\n', 'http.server': 'Apache', 'http.last_modified': 'Tue, 26 May 2020 04:09:49 GMT', 'http.content_length_header': '632', 'http.content_length_header_tree': {'http.content_length': '632'}, 'http.connection': 'Keep-Alive', 'http.content_type': 'image/png;charset=UTF-8', '\\r\\n': '', 'http.response': '1', 'http.response_number': '9', 'http.time': '0.020866000', 'http.prev_request_in': '3394', 'http.prev_response_in': '3832', 'http.request_in': '3853', 'http.response_for.uri': 'http://me.go.kr/images/home/main/2018/img_quick01.png', 'http.file_data': '�PNG\r\n\x1a\n'}, 'png': {'png.signature': '89:50:4e:47:0d:0a:1a:0a', 'Image Header (IHDR)': {'png.chunk.len': '13', 'png.chunk.type': 'IHDR', 'png.chunk.flag.ancillary': '0', 'png.chunk.flag.private': '0', 'png.chunk.flag.stc': '0', 'png.ihdr.width': '51', 'png.ihdr.height': '28', 'png.ihdr.bitdepth': '8', 'png.ihdr.colour_type': '3', 'png.ihdr.compression_method': '0', 'png.ihdr.filter_method': '0', 'png.ihdr.interlace_method': '0', 'png.chunk.crc': '0xfb8577fb'}, 'Palette (PLTE)': {'png.chunk.len': '117', 'png.chunk.type': 'PLTE', 'png.chunk.flag.ancillary': '0', 'png.chunk.flag.private': '0', 'png.chunk.flag.stc': '0', 'png.chunk.data': '', 'png.chunk.crc': '0xe58b6640'}, 'Transparency (tRNS)': {'png.chunk.len': '38', 'png.chunk.type': 'tRNS', 'png.chunk.flag.ancillary': '1', 'png.chunk.flag.private': '0', 'png.chunk.flag.stc': '0', 'png.chunk.data': '', 'png.chunk.crc': '0x85d3a4ed'}, 'Image data chunk (IDAT)': {'png.chunk.len': '396', 'png.chunk.type': 'IDAT', 'png.chunk.flag.ancillary': '0', 'png.chunk.flag.private': '0', 'png.chunk.flag.stc': '0', 'png.chunk.data': '', 'png.chunk.crc': '0x7f41c39b'}, 'Image Trailer (IEND)': {'png.chunk.len': '0', 'png.chunk.type': 'IEND', 'png.chunk.flag.ancillary': '0', 'png.chunk.flag.private': '0', 'png.chunk.flag.stc': '0', 'png.chunk.crc': '0xae426082'}}}}}
+{
+	"_index": "packets-2021-08-15",
+	"_type": "doc",
+	"_score": null,
+	"_source": {
+		"layers": {
+			"frame": {
+				"frame.interface_id": "0",
+				"frame.interface_id_tree": {
+					"frame.interface_name": "\\Device\\NPF_{6F1B7833-93B1-41E5-84E7-D303FD54E8FF}",
+					"frame.interface_description": "Wi-Fi"
+				},
+				"frame.encap_type": "1",
+				"frame.time": "Aug 15, 2021 22:05:35.004286000 대한민국 표준시",
+				"frame.offset_shift": "0.000000000",
+				"frame.time_epoch": "1629032735.004286000",
+				"frame.time_delta": "0.000000000",
+				"frame.time_delta_displayed": "0.000000000",
+				"frame.time_relative": "12.895443000",
+				"frame.number": "3969",
+				"frame.len": "972",
+				"frame.cap_len": "972",
+				"frame.marked": "0",
+				"frame.ignored": "0",
+				"frame.protocols": "eth:ethertype:ip:tcp:http:png"
+			},
+			"eth": {
+				"eth.dst": "2c:8d:b1:e8:1b:92",
+				"eth.dst_tree": {
+					"eth.dst_resolved": "IntelCor_e8:1b:92",
+					"eth.dst.oui": "2919857",
+					"eth.dst.oui_resolved": "Intel Corporate",
+					"eth.addr": "2c:8d:b1:e8:1b:92",
+					"eth.addr_resolved": "IntelCor_e8:1b:92",
+					"eth.addr.oui": "2919857",
+					"eth.addr.oui_resolved": "Intel Corporate",
+					"eth.dst.lg": "0",
+					"eth.lg": "0",
+					"eth.dst.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.src": "70:5d:cc:db:08:a8",
+				"eth.src_tree": {
+					"eth.src_resolved": "EFMNetwo_db:08:a8",
+					"eth.src.oui": "7364044",
+					"eth.src.oui_resolved": "EFM Networks",
+					"eth.addr": "70:5d:cc:db:08:a8",
+					"eth.addr_resolved": "EFMNetwo_db:08:a8",
+					"eth.addr.oui": "7364044",
+					"eth.addr.oui_resolved": "EFM Networks",
+					"eth.src.lg": "0",
+					"eth.lg": "0",
+					"eth.src.ig": "0",
+					"eth.ig": "0"
+				},
+				"eth.type": "0x00000800"
+			},
+			"ip": {
+				"ip.version": "4",
+				"ip.hdr_len": "20",
+				"ip.dsfield": "0x00000000",
+				"ip.dsfield_tree": {
+					"ip.dsfield.dscp": "0",
+					"ip.dsfield.ecn": "0"
+				},
+				"ip.len": "958",
+				"ip.id": "0x0000f9a0",
+				"ip.flags": "0x00000040",
+				"ip.flags_tree": {
+					"ip.flags.rb": "0",
+					"ip.flags.df": "1",
+					"ip.flags.mf": "0"
+				},
+				"ip.frag_offset": "0",
+				"ip.ttl": "47",
+				"ip.proto": "6",
+				"ip.checksum": "0x000099b4",
+				"ip.checksum.status": "2",
+				"ip.src": "27.101.216.200",
+				"ip.addr": "192.168.0.15",
+				"ip.src_host": "27.101.216.200",
+				"ip.host": "192.168.0.15",
+				"ip.dst": "192.168.0.15",
+				"ip.dst_host": "192.168.0.15"
+			},
+			"tcp": {
+				"tcp.srcport": "80",
+				"tcp.dstport": "63972",
+				"tcp.port": "63972",
+				"tcp.stream": "48",
+				"tcp.len": "918",
+				"tcp.seq": "494259",
+				"tcp.seq_raw": "3626378653",
+				"tcp.nxtseq": "495177",
+				"tcp.ack": "4533",
+				"tcp.ack_raw": "4001847560",
+				"tcp.hdr_len": "20",
+				"tcp.flags": "0x00000018",
+				"tcp.flags_tree": {
+					"tcp.flags.res": "0",
+					"tcp.flags.ns": "0",
+					"tcp.flags.cwr": "0",
+					"tcp.flags.ecn": "0",
+					"tcp.flags.urg": "0",
+					"tcp.flags.ack": "1",
+					"tcp.flags.push": "1",
+					"tcp.flags.reset": "0",
+					"tcp.flags.syn": "0",
+					"tcp.flags.fin": "0",
+					"tcp.flags.str": "·······AP···"
+				},
+				"tcp.window_size_value": "304",
+				"tcp.window_size": "38912",
+				"tcp.window_size_scalefactor": "128",
+				"tcp.checksum": "0x0000fc6e",
+				"tcp.checksum.status": "2",
+				"tcp.urgent_pointer": "0",
+				"tcp.analysis": {
+					"tcp.analysis.acks_frame": "3853",
+					"tcp.analysis.ack_rtt": "0.020866000",
+					"tcp.analysis.initial_rtt": "0.027221000",
+					"tcp.analysis.bytes_in_flight": "918",
+					"tcp.analysis.push_bytes_sent": "918"
+				},
+				"Timestamps": {
+					"tcp.time_relative": "2.616791000",
+					"tcp.time_delta": "0.020866000"
+				},
+				"tcp.payload": "48:54:54:50:2f:31:2e:31:20:32:30:30:20:4f:4b:0d:0a:44:61:74:65:3a:20:53:75:6e:2c:20:31:35:20:41:75:67:20:32:30:32:31:20:31:33:3a:30:35:3a:33:35:20:47:4d:54:0d:0a:53:65:72:76:65:72:3a:20:41:70:61:63:68:65:0d:0a:41:63:63:65:70:74:2d:52:61:6e:67:65:73:3a:20:62:79:74:65:73:0d:0a:45:54:61:67:3a:20:57:2f:22:36:33:32:2d:31:35:39:30:34:36:36:31:38:39:30:30:30:22:0d:0a:4c:61:73:74:2d:4d:6f:64:69:66:69:65:64:3a:20:54:75:65:2c:20:32:36:20:4d:61:79:20:32:30:32:30:20:30:34:3a:30:39:3a:34:39:20:47:4d:54:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:36:33:32:0d:0a:4b:65:65:70:2d:41:6c:69:76:65:3a:20:74:69:6d:65:6f:75:74:3d:35:2c:20:6d:61:78:3d:39:39:39:32:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:4b:65:65:70:2d:41:6c:69:76:65:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:69:6d:61:67:65:2f:70:6e:67:3b:63:68:61:72:73:65:74:3d:55:54:46:2d:38:0d:0a:0d:0a:89:50:4e:47:0d:0a:1a:0a:00:00:00:0d:49:48:44:52:00:00:00:33:00:00:00:1c:08:03:00:00:00:fb:85:77:fb:00:00:00:75:50:4c:54:45:00:00:00:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:e5:8b:66:40:00:00:00:26:74:52:4e:53:00:d9:cb:eb:e6:b8:f6:d1:1e:e3:4c:f9:c4:b0:de:0a:04:71:a7:a3:63:9e:9a:3f:33:f1:bc:6d:ac:79:46:2d:15:8e:38:12:82:27:85:d3:a4:ed:00:00:01:8c:49:44:41:54:38:cb:9d:94:d9:76:a3:30:0c:40:25:cb:0b:0e:06:42:d8:02:24:84:24:13:fd:ff:27:8e:59:e6:4c:db:e0:9e:d2:fb:c0:c1:a0:6b:d9:06:09:de:88:ca:a2:33:a9:9c:49:85:ba:37:19:7c:c3:f1:96:5f:1c:b6:cc:da:1a:31:83:92:99:a5:17:87:80:f8:c0:98:b9:45:77:ca:6f:47:58:c9:86:bb:12:93:68:af:9b:8e:8b:5d:55:46:f0:4e:d6:dc:15:d9:cd:4c:98:fa:cb:b3:b9:16:4a:58:5a:90:d8:9d:ae:8f:29:5a:e9:68:cb:b1:6d:e2:90:98:39:96:46:ac:a4:7a:1e:76:05:6e:3b:31:33:a1:53:75:39:6f:67:e5:55:d6:3e:ad:7f:c5:e7:cf:eb:2d:ab:c4:a3:db:e1:19:38:d0:57:4f:dc:f9:90:aa:cc:96:07:b5:e5:05:0d:61:88:17:6c:3d:2d:42:b1:4d:f2:83:c7:a6:10:a6:8b:4b:1f:92:27:96:15:40:ce:b8:ee:0e:31:68:fc:3f:b7:08:39:07:a7:1b:d8:e1:40:a3:1d:a4:08:3b:9c:e5:33:4a:b1:d3:11:f2:57:79:04:8d:bb:9c:91:04:14:5c:ed:72:2a:2e:20:92:94:ef:70:72:92:fe:a6:a7:d8:5c:4e:9e:56:42:18:c1:89:0f:b9:98:98:7a:f0:0c:8e:7e:fc:ef:90:1b:60:61:6c:0e:1e:a2:43:b4:2d:64:e7:2b:71:e9:43:9a:f1:bd:16:da:54:a8:22:7f:64:1f:5a:44:ef:3b:8a:5c:6a:61:83:94:2e:0e:e7:d7:84:66:c5:fa:a1:b6:42:55:46:47:c1:da:ce:ce:7d:a5:04:fe:c3:a8:a2:bf:1d:c3:b5:ed:62:57:1f:9e:5b:25:77:fe:93:90:cd:82:bd:8a:8c:fa:24:be:7c:cb:b3:f1:da:ab:02:f3:09:3b:89:28:16:4c:aa:a7:91:9f:66:cd:12:16:1d:ca:05:8b:ae:28:47:f8:c2:5f:1d:ac:20:2d:7f:41:c3:9b:00:00:00:00:49:45:4e:44:ae:42:60:82"
+			},
+			"http": {
+				"HTTP/1.1 200 OK\\r\\n": {
+					"_ws.expert": {
+						"http.chat": "",
+						"_ws.expert.message": "HTTP/1.1 200 OK\\r\\n",
+						"_ws.expert.severity": "2097152",
+						"_ws.expert.group": "33554432"
+					},
+					"http.response.version": "HTTP/1.1",
+					"http.response.code": "200",
+					"http.response.code.desc": "OK",
+					"http.response.phrase": "OK"
+				},
+				"http.date": "Sun, 15 Aug 2021 13:05:35 GMT",
+				"http.response.line": "Content-Type: image/png;charset=UTF-8\r\n",
+				"http.server": "Apache",
+				"http.last_modified": "Tue, 26 May 2020 04:09:49 GMT",
+				"http.content_length_header": "632",
+				"http.content_length_header_tree": {
+					"http.content_length": "632"
+				},
+				"http.connection": "Keep-Alive",
+				"http.content_type": "image/png;charset=UTF-8",
+				"\\r\\n": "",
+				"http.response": "1",
+				"http.response_number": "9",
+				"http.time": "0.020866000",
+				"http.prev_request_in": "3394",
+				"http.prev_response_in": "3832",
+				"http.request_in": "3853",
+				"http.response_for.uri": "http://me.go.kr/images/home/main/2018/img_quick01.png",
+				"http.file_data": "�PNG\r\n\u001a\n"
+			},
+			"png": {
+				"png.signature": "89:50:4e:47:0d:0a:1a:0a",
+				"Image Header (IHDR)": {
+					"png.chunk.len": "13",
+					"png.chunk.type": "IHDR",
+					"png.chunk.flag.ancillary": "0",
+					"png.chunk.flag.private": "0",
+					"png.chunk.flag.stc": "0",
+					"png.ihdr.width": "51",
+					"png.ihdr.height": "28",
+					"png.ihdr.bitdepth": "8",
+					"png.ihdr.colour_type": "3",
+					"png.ihdr.compression_method": "0",
+					"png.ihdr.filter_method": "0",
+					"png.ihdr.interlace_method": "0",
+					"png.chunk.crc": "0xfb8577fb"
+				},
+				"Palette (PLTE)": {
+					"png.chunk.len": "117",
+					"png.chunk.type": "PLTE",
+					"png.chunk.flag.ancillary": "0",
+					"png.chunk.flag.private": "0",
+					"png.chunk.flag.stc": "0",
+					"png.chunk.data": "",
+					"png.chunk.crc": "0xe58b6640"
+				},
+				"Transparency (tRNS)": {
+					"png.chunk.len": "38",
+					"png.chunk.type": "tRNS",
+					"png.chunk.flag.ancillary": "1",
+					"png.chunk.flag.private": "0",
+					"png.chunk.flag.stc": "0",
+					"png.chunk.data": "",
+					"png.chunk.crc": "0x85d3a4ed"
+				},
+				"Image data chunk (IDAT)": {
+					"png.chunk.len": "396",
+					"png.chunk.type": "IDAT",
+					"png.chunk.flag.ancillary": "0",
+					"png.chunk.flag.private": "0",
+					"png.chunk.flag.stc": "0",
+					"png.chunk.data": "",
+					"png.chunk.crc": "0x7f41c39b"
+				},
+				"Image Trailer (IEND)": {
+					"png.chunk.len": "0",
+					"png.chunk.type": "IEND",
+					"png.chunk.flag.ancillary": "0",
+					"png.chunk.flag.private": "0",
+					"png.chunk.flag.stc": "0",
+					"png.chunk.crc": "0xae426082"
+				}
+			}
+		}
+	}
+}
