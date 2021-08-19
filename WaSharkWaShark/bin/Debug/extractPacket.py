@@ -68,7 +68,7 @@ for i in json_data:
     """
 
     f = open("RawPacket/%s.txt"%result["No"], 'w', encoding="utf-8")
-    data = " ".join("{:02x}".format(ord(ch)) for ch in str(i))
+    data = "".join("{:3x}".format(ord(ch)) for ch in str(i) if 0x00 <= ord(ch) <= 0xff)
     f.write(data)
     f.close()
 

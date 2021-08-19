@@ -123,6 +123,8 @@ namespace WaSharkWaShark
                         //pi.rawPacket = json[i]["RawPacket"].ToString();
                         //pi.jsonView = json[i]["JsonView"].ToString();
 
+                        //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
                         pi.rawPacket = "대화형식@@@@@@@@@";
                         pi.jsonView = "대화형식##########";
 
@@ -165,18 +167,42 @@ namespace WaSharkWaShark
             {
                 int selectRow = lvwPacket.SelectedItems[0].Index;
 
-                string rawPacket = lvwPacket.Items[selectRow].SubItems[10].Text;
-                string jsonView = lvwPacket.Items[selectRow].SubItems[11].Text;
+                //string rawPacket = lvwPacket.Items[selectRow].SubItems[10].Text;
+                //string jsonView = lvwPacket.Items[selectRow].SubItems[11].Text;
 
-                txtDialog.SelectionColor = Color.Red;
-                txtDialog.AppendText(rawPacket + "\r\n");
+                string epPath = "followStream.py";
 
-                txtDialog.SelectionColor = Color.Blue;
-                txtDialog.AppendText(jsonView + "\r\n");
+                ProcessStartInfo start = new ProcessStartInfo();
+                start.FileName = "python.exe";
+                start.Arguments = string.Format("{0} {1}", epPath, selectRow);
+                start.UseShellExecute = false;
+                start.RedirectStandardOutput = true;
+                start.RedirectStandardError = true;
+                start.RedirectStandardInput = true;
+                start.StandardOutputEncoding = Encoding.Default;
+                start.StandardErrorEncoding = Encoding.Default;
+                using (Process process = Process.Start(start))
+                {
+                    using (StreamReader reader = process.StandardOutput)
+                    {
+                        string result = reader.ReadToEnd();
 
-                //richTextBox 자동 스크롤 설정
-                txtDialog.Select(txtDialog.Text.Length, 0);
-                txtDialog.ScrollToCaret();
+                        //대화형식 분할
+                        string[] resultSplit = result.Split(new char[] {'@'});
+
+                        for (int i = 0; i < resultSplit.Length - 1; i++)
+                        {
+                            txtDialog.SelectionColor = i % 2 == 0 ? Color.Red : Color.Blue;
+                            txtDialog.AppendText(resultSplit[i]);
+                        }
+
+                        //richTextBox 자동 스크롤 설정
+                        txtDialog.Select(txtDialog.Text.Length, 0);
+                        txtDialog.ScrollToCaret();
+
+                        reader.Close();
+                    }
+                }
             }
         }
 
@@ -212,14 +238,25 @@ namespace WaSharkWaShark
 
                 rawPacket = string.Empty;
 
+                //init setting
+                int j = 8;
+                rawPacket += "OFFSET(h)".PadRight(8, ' ') + ": 00 01 02 03 04 05 06 07 | 08 09 0A 0B 0C 0D 0E 0F " + "\r\n";
+
                 for(int i = 0; i < rpSplit.Length ; i++)
                 {
                     rawPacket += rpSplit[i].ToUpper() + " ";
-                    if(i % 32 == 0)
+                    if(i == j)
+                    {
+                        rawPacket += "| ";
+                        j += 16;
+                    }
+                    if (i % 16 == 0)
+                    {
                         rawPacket += "\r\n";
+                        rawPacket += (i.ToString("X")).PadLeft(8, '0').ToString() + " : ";
+                        //https://bitwizx.tistory.com/3 앞에 0채워서 표현
+                    }
                 }
-
-                SR.Close();
 
                 //Modaless 형식으로 Form2 생성
                 Form2 f2 = new Form2();
@@ -228,6 +265,8 @@ namespace WaSharkWaShark
 
                 //Raw Packet 전달
                 SendInfo("Raw Packet", rawPacket);
+
+                SR.Close();
             }
             else
             {
@@ -258,6 +297,8 @@ namespace WaSharkWaShark
 
                 //jsonView 전달
                 SendInfo("Json View", jsonView);
+
+                SR.Close();
             }
             else
             {

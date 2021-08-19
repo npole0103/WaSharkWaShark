@@ -71,6 +71,7 @@
             // 
             // txtLog
             // 
+            this.txtLog.Font = new System.Drawing.Font("바탕체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtLog.Location = new System.Drawing.Point(12, 50);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
