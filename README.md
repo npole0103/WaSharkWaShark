@@ -187,7 +187,7 @@
 
     가독성이 심히 떨어지는 기존 Raw Packet의 Hex View를 Hxd와 비슷하게 가공하여 개선.
 
-    ![Untitled](readmeData8/Untitled%2031.png)
+    ![Untitled](readmeData/Untitled%2031.png)
 
 **Progress Bar 추가**
 
@@ -229,4 +229,4 @@
 
 **[Download]** **WaSharkWaShark_1.0_ver.zip**
 
-[](https://github.com/npole0103/WaSharkWaShark/raw/main/WaSharkWaShark_1.0_ver.zip)
+[Download](https://github.com/npole0103/WaSharkWaShark/raw/main/WaSharkWaShark_1.0_ver.zip)
