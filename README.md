@@ -12,11 +12,11 @@
 
 1. **pcapng 파일 json으로 변환 확인**
 
-![Untitled](%E1%84%8B%E1%85%AA%E1%84%89%E1%85%A3%E1%86%A8%E1%84%8B%E1%85%AA%E1%84%89%E1%85%A3%E1%86%A8%20Washark-Washark%209d6483e7ac2848d3bc078ebc9bc46ca8/Untitled.png)
+![Untitled](readmeData/Untitled.png)
 
 → tshark를 설치하고 파이썬 Import os를 통해 .pcapng 파일을 .json 확장자로 출력
 
-![Untitled](%E1%84%8B%E1%85%AA%E1%84%89%E1%85%A3%E1%86%A8%E1%84%8B%E1%85%AA%E1%84%89%E1%85%A3%E1%86%A8%20Washark-Washark%209d6483e7ac2848d3bc078ebc9bc46ca8/Untitled%201.png)
+![Untitled](readmeData/Untitled%201.png)
 
 → pcapng 파일이 json 형태로 잘 변환된 것을 확인
 
