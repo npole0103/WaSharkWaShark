@@ -72,11 +72,11 @@
 
     ![Untitled](readmeData/Untitled%2011.png)
 
-    OpenFileDialog와 SaveFileDialog를 만들고 각각에 대해 Json 파일을 기본으로 설정을 진행해주었습니다.
+    OpenFileDialog와 SaveFileDialog를 만들고 각각에 대해 Json 파일을 기본으로 설정을 진행
 
     ![Untitled](readmeData/Untitled%2012.png)
 
-    JsonFile 저장하는 함수의 골격 코드이고, 위 함수를 응용하여 다음과 같은 4가지 저장 기능을 구현했습니다.
+    JsonFile 저장하는 함수의 골격 코드이고, 위 함수를 응용하여 다음과 같은 4가지 저장 기능을 구현
 
     - ListView 전체 패킷 정보 저장
     - Follow Stream 저장
