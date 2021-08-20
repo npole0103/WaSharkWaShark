@@ -61,7 +61,7 @@ namespace WaSharkWaShark
             lblText.Text = title;
             if (title.Equals("Raw Packet"))
             {
-                txtLog.TextAlign = HorizontalAlignment.Center;
+                txtLog.TextAlign = HorizontalAlignment.Left;
                 txtLog.Font = new Font(txtLog.Font.FontFamily, 14);
             }
             else if (title.Equals("Json View"))

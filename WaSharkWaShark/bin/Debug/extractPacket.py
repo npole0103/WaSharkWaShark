@@ -52,20 +52,6 @@ for i in json_data:
         result["URI"] = i["_source"]["layers"]["http"]["http.response_for.uri"]
     if(is_json_key_present(i["_source"]["layers"]["http"],"http.request.line")):
         result["URI"] = i["_source"]["layers"]["http"]["http.request.full_uri"]
-    """
-    idx = 0
-    tem = ""
-    rawpacket = ""
-    for c in str(i):
-        if(idx == 16):
-            idx = 0
-            rawpacket += ":".join("{:02x}".format(ord(ch)) for ch in tem) + "\r\n"
-            tem =""
-            continue
-        tem += c
-        idx += 1
-    rawpacket += ":".join("{:02x}".format(ord(ch)) for ch in str(i))
-    """
 
     f = open("RawPacket/%s.txt"%result["No"], 'w', encoding="utf-8")
     data = "".join("{:3x}".format(ord(ch)) for ch in str(i) if 0x00 <= ord(ch) <= 0xff)
@@ -77,12 +63,8 @@ for i in json_data:
     f.write(data)
     f.close()
 
-    #result["RawPacket"] = ":".join("{:02x}".format(ord(ch)) for ch in str(i))
-    #result["JsonView"] = str(i)
-
     result["RawPacket"] = "RawPacket"
     result["JsonView"] = "JsonView"
-
 
     count += 1
     result_json.append(result)

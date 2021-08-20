@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{225D8D0E-25A5-4ED9-B465-8CBD39700F46}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>WaSharkWaShark</RootNamespace>
     <AssemblyName>WaSharkWaShark</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>

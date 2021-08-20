@@ -14,8 +14,6 @@ def filter2(j_list):
 
 def print_data(j):
     path = json_data[j]["_source"]["layers"]
-    #print('nxtseq: {0}'.format(path["tcp"]["tcp.nxtseq"]))
-    #print('ack: {0}'.format(path["tcp"]["tcp.ack"]))
     
     print(json.dumps(path["http"], indent="\t"))
     print("@")

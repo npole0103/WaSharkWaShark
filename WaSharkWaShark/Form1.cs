@@ -24,10 +24,9 @@ namespace WaSharkWaShark
         public Form1()
         {
             InitializeComponent();
-            //ofd, sfd 설정
-            InitializeFileDialog();
-            //listView 설정
-            lvwPacket.View = View.Details;
+
+            InitializeFileDialog(); //ofd, sfd 설정
+            lvwPacket.View = View.Details; //listView 설정
         }
 
         private void InitializeFileDialog()
@@ -56,9 +55,6 @@ namespace WaSharkWaShark
 
             public string length;
             public string uri;
-
-            public string rawPacket;
-            public string jsonView;
         };
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -67,9 +63,9 @@ namespace WaSharkWaShark
         }
 
         private void btnExtract_Click(object sender, EventArgs e)
+
         {
             //Process -> Json
-            //Python 코드 완성되면 적용하기
 
             pbState.Value = 1;
 
@@ -80,6 +76,7 @@ namespace WaSharkWaShark
             start.FileName = "python.exe";
             start.Arguments = string.Format("{0}", epPath);
             start.UseShellExecute = false;
+            start.CreateNoWindow = true;
             start.RedirectStandardOutput = true;
             start.RedirectStandardError = true;
             start.RedirectStandardInput = true;
@@ -110,30 +107,24 @@ namespace WaSharkWaShark
                         pi.time = json[i]["Time"].ToString();
 
                         pi.srcIp = json[i]["SrcIp"].ToString();
-                        pi.srcMac = json[i]["SrcMac"].ToString();
+                        pi.srcMac = json[i]["SrcMac"].ToString().ToUpper();
                         pi.srcDomain = json[i]["SrcDomain"].ToString();
 
                         pi.desIp = json[i]["DesIp"].ToString();
-                        pi.desMac = json[i]["DesMac"].ToString();
+                        pi.desMac = json[i]["DesMac"].ToString().ToUpper();
                         pi.desDomain = json[i]["DesDomain"].ToString();
 
                         pi.length = json[i]["Length"].ToString();
                         pi.uri = json[i]["URI"].ToString();
 
-                        //pi.rawPacket = json[i]["RawPacket"].ToString();
-                        //pi.jsonView = json[i]["JsonView"].ToString();
-
-                        //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-                        pi.rawPacket = "대화형식@@@@@@@@@";
-                        pi.jsonView = "대화형식##########";
-
-                        listItem = new ListViewItem(new String[] { pi.no, pi.time, pi.srcIp, pi.srcMac, pi.srcDomain, pi.desIp, pi.desMac, pi.desDomain, pi.length, pi.uri, pi.rawPacket, pi.jsonView });
+                        listItem = new ListViewItem(new String[] { pi.no, pi.time, pi.srcIp, pi.srcMac, pi.srcDomain, pi.desIp, pi.desMac, pi.desDomain, pi.length, pi.uri});
                         lvwPacket.Items.Add(listItem);
 
-                        pbState.PerformStep();
+                        pbState.PerformStep(); //progressbar State Update
                     }
-                    lblPb.Text = "Complete";
+
+                    lblPb.Text = "Complete";// 완료시
+
                     reader.Close();
                 }
             }
@@ -167,15 +158,13 @@ namespace WaSharkWaShark
             {
                 int selectRow = lvwPacket.SelectedItems[0].Index;
 
-                //string rawPacket = lvwPacket.Items[selectRow].SubItems[10].Text;
-                //string jsonView = lvwPacket.Items[selectRow].SubItems[11].Text;
-
                 string epPath = "followStream.py";
 
                 ProcessStartInfo start = new ProcessStartInfo();
                 start.FileName = "python.exe";
                 start.Arguments = string.Format("{0} {1}", epPath, selectRow);
                 start.UseShellExecute = false;
+                start.CreateNoWindow = true;
                 start.RedirectStandardOutput = true;
                 start.RedirectStandardError = true;
                 start.RedirectStandardInput = true;
@@ -192,6 +181,7 @@ namespace WaSharkWaShark
 
                         for (int i = 0; i < resultSplit.Length - 1; i++)
                         {
+                            //짝수일 때 빨간색, 홀수 일 때 파란색으로
                             txtDialog.SelectionColor = i % 2 == 0 ? Color.Red : Color.Blue;
                             txtDialog.AppendText(resultSplit[i]);
                         }
@@ -238,19 +228,20 @@ namespace WaSharkWaShark
 
                 rawPacket = string.Empty;
 
-                //init setting
+                //init display
                 int j = 8;
                 rawPacket += "OFFSET(h)".PadRight(8, ' ') + ": 00 01 02 03 04 05 06 07 | 08 09 0A 0B 0C 0D 0E 0F " + "\r\n";
 
                 for(int i = 0; i < rpSplit.Length ; i++)
                 {
-                    rawPacket += rpSplit[i].ToUpper() + " ";
-                    if(i == j)
+                    rawPacket += rpSplit[i].ToUpper() + " "; //Hex 값 붙여넣기
+                    
+                    if(i == j) // 중간에 | 구분
                     {
                         rawPacket += "| ";
                         j += 16;
                     }
-                    if (i % 16 == 0)
+                    if (i % 16 == 0) //16 바이트 마다 개행 + offset 정보
                     {
                         rawPacket += "\r\n";
                         rawPacket += (i.ToString("X")).PadLeft(8, '0').ToString() + " : ";
@@ -348,12 +339,138 @@ namespace WaSharkWaShark
                 "2. Extract Pcap : Main.json 형식의 패킷 정보 파일을 분석하여 추출함. \n " +
                 "3. Follow Stream Save as Json : 대화 형식의 뷰를 Json 파일로 저장. \n" +
                 "4. Raw Packet : 패킷 형태를 Hex View로 제공. \n" +
-                "5. Json View : 패킷 형태를 Json View로 제공. \n",
+                "5. Json View : 패킷 형태를 Json View로 제공. \n" +
+                "6. Filtering : 체크 박스 체크시 패킷 숨김 기능 제공. \n",
             "Information",
             MessageBoxButtons.OK,
             MessageBoxIcon.Information
             );
         }
 
+        private void col_CheckedChanged(object sender, EventArgs e)
+        {
+            //60 300 100 120 120 100 120 120 80 300
+
+            //No
+            if (cbNo.Checked == false)
+            {
+                lvwPacket.Columns[0].Width = 0;
+                cbNo.Text = "No(H)";
+            }
+            else if(cbNo.Checked == true)
+            {
+                lvwPacket.Columns[0].Width = 60;
+                cbNo.Text = "No";
+            }
+
+            //Time
+            if (cbTime.Checked == false)
+            {
+                lvwPacket.Columns[1].Width = 0;
+                cbTime.Text = "Time(H)";
+            }
+            else if (cbTime.Checked == true)
+            {
+                lvwPacket.Columns[1].Width = 300;
+                cbTime.Text = "Time";
+            }
+
+            //SrcIp
+            if (cbSrcIp.Checked == false)
+            {
+                lvwPacket.Columns[2].Width = 0;
+                cbSrcIp.Text = "SrcIp(H)";
+            }
+            else if (cbSrcIp.Checked == true)
+            {
+                lvwPacket.Columns[2].Width = 100;
+                cbSrcIp.Text = "SrcIp";
+            }
+
+            //SrcMac
+            if (cbSrcMac.Checked == false)
+            {
+                lvwPacket.Columns[3].Width = 0;
+                cbSrcMac.Text = "SrcIp(H)";
+            }
+            else if (cbSrcMac.Checked == true)
+            {
+                lvwPacket.Columns[3].Width = 120;
+                cbSrcMac.Text = "SrcIp";
+            }
+
+            //SrcDomain
+            if (cbSrcDomain.Checked == false)
+            {
+                lvwPacket.Columns[4].Width = 0;
+                cbSrcDomain.Text = "SrcDomain(H)";
+            }
+            else if (cbSrcDomain.Checked == true)
+            {
+                lvwPacket.Columns[4].Width = 120;
+                cbSrcDomain.Text = "SrcDomain";
+            }
+
+            //DesIp
+            if (cbDesIp.Checked == false)
+            {
+                lvwPacket.Columns[5].Width = 0;
+                cbDesIp.Text = "DesIp(H)";
+            }
+            else if (cbDesIp.Checked == true)
+            {
+                lvwPacket.Columns[5].Width = 100;
+                cbDesIp.Text = "DesIp";
+            }
+
+            //DesMac
+            if (cbDesMac.Checked == false)
+            {
+                lvwPacket.Columns[6].Width = 0;
+                cbDesMac.Text = "DesIp(H)";
+            }
+            else if (cbDesMac.Checked == true)
+            {
+                lvwPacket.Columns[6].Width = 120;
+                cbDesMac.Text = "DesIp";
+            }
+
+            //DesDomain
+            if (cbDesDomain.Checked == false)
+            {
+                lvwPacket.Columns[7].Width = 0;
+                cbDesDomain.Text = "DesDomain(H)";
+            }
+            else if (cbDesDomain.Checked == true)
+            {
+                lvwPacket.Columns[7].Width = 120;
+                cbDesDomain.Text = "DesDomain";
+            }
+
+            //Length
+            if (cbLength.Checked == false)
+            {
+                lvwPacket.Columns[8].Width = 0;
+                cbLength.Text = "Length(H)";
+            }
+            else if (cbLength.Checked == true)
+            {
+                lvwPacket.Columns[8].Width = 80;
+                cbLength.Text = "Length";
+            }
+
+            //URI
+            if (cbURI.Checked == false)
+            {
+                lvwPacket.Columns[9].Width = 0;
+                cbURI.Text = "URI(H)";
+            }
+            else if (cbURI.Checked == true)
+            {
+                lvwPacket.Columns[9].Width = 300;
+                cbURI.Text = "URI";
+            }
+
+        }
     }
 }

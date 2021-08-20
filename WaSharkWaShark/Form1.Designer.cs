@@ -56,6 +56,16 @@
             this.txtDialog = new System.Windows.Forms.RichTextBox();
             this.pbState = new System.Windows.Forms.ProgressBar();
             this.lblPb = new System.Windows.Forms.Label();
+            this.cbNo = new System.Windows.Forms.CheckBox();
+            this.cbTime = new System.Windows.Forms.CheckBox();
+            this.cbSrcIp = new System.Windows.Forms.CheckBox();
+            this.cbSrcMac = new System.Windows.Forms.CheckBox();
+            this.cbSrcDomain = new System.Windows.Forms.CheckBox();
+            this.cbDesIp = new System.Windows.Forms.CheckBox();
+            this.cbDesMac = new System.Windows.Forms.CheckBox();
+            this.cbDesDomain = new System.Windows.Forms.CheckBox();
+            this.cbLength = new System.Windows.Forms.CheckBox();
+            this.cbURI = new System.Windows.Forms.CheckBox();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,9 +126,9 @@
             this.RawPacket,
             this.JsonView});
             this.lvwPacket.HideSelection = false;
-            this.lvwPacket.Location = new System.Drawing.Point(36, 27);
+            this.lvwPacket.Location = new System.Drawing.Point(36, 48);
             this.lvwPacket.Name = "lvwPacket";
-            this.lvwPacket.Size = new System.Drawing.Size(1446, 237);
+            this.lvwPacket.Size = new System.Drawing.Size(1446, 216);
             this.lvwPacket.TabIndex = 1;
             this.lvwPacket.UseCompatibleStateImageBehavior = false;
             this.lvwPacket.SelectedIndexChanged += new System.EventHandler(this.lvwPacket_SelectedIndexChanged);
@@ -126,7 +136,6 @@
             // No
             // 
             this.No.Text = "No";
-            this.No.Width = 40;
             // 
             // Time
             // 
@@ -166,6 +175,7 @@
             // Length
             // 
             this.Length.Text = "Length";
+            this.Length.Width = 80;
             // 
             // URI
             // 
@@ -260,11 +270,151 @@
             this.lblPb.TabIndex = 10;
             this.lblPb.Text = "State";
             // 
+            // cbNo
+            // 
+            this.cbNo.AutoSize = true;
+            this.cbNo.Checked = true;
+            this.cbNo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbNo.Location = new System.Drawing.Point(36, 27);
+            this.cbNo.Name = "cbNo";
+            this.cbNo.Size = new System.Drawing.Size(40, 16);
+            this.cbNo.TabIndex = 11;
+            this.cbNo.Text = "No";
+            this.cbNo.UseVisualStyleBackColor = true;
+            this.cbNo.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
+            // cbTime
+            // 
+            this.cbTime.AutoSize = true;
+            this.cbTime.Checked = true;
+            this.cbTime.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTime.Location = new System.Drawing.Point(101, 26);
+            this.cbTime.Name = "cbTime";
+            this.cbTime.Size = new System.Drawing.Size(53, 16);
+            this.cbTime.TabIndex = 12;
+            this.cbTime.Text = "Time";
+            this.cbTime.UseVisualStyleBackColor = true;
+            this.cbTime.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
+            // cbSrcIp
+            // 
+            this.cbSrcIp.AutoSize = true;
+            this.cbSrcIp.Checked = true;
+            this.cbSrcIp.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbSrcIp.Location = new System.Drawing.Point(398, 26);
+            this.cbSrcIp.Name = "cbSrcIp";
+            this.cbSrcIp.Size = new System.Drawing.Size(53, 16);
+            this.cbSrcIp.TabIndex = 13;
+            this.cbSrcIp.Text = "SrcIp";
+            this.cbSrcIp.UseVisualStyleBackColor = true;
+            this.cbSrcIp.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
+            // cbSrcMac
+            // 
+            this.cbSrcMac.AutoSize = true;
+            this.cbSrcMac.Checked = true;
+            this.cbSrcMac.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbSrcMac.Location = new System.Drawing.Point(498, 26);
+            this.cbSrcMac.Name = "cbSrcMac";
+            this.cbSrcMac.Size = new System.Drawing.Size(68, 16);
+            this.cbSrcMac.TabIndex = 14;
+            this.cbSrcMac.Text = "SrcMac";
+            this.cbSrcMac.UseVisualStyleBackColor = true;
+            this.cbSrcMac.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
+            // cbSrcDomain
+            // 
+            this.cbSrcDomain.AutoSize = true;
+            this.cbSrcDomain.Checked = true;
+            this.cbSrcDomain.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbSrcDomain.Location = new System.Drawing.Point(620, 26);
+            this.cbSrcDomain.Name = "cbSrcDomain";
+            this.cbSrcDomain.Size = new System.Drawing.Size(86, 16);
+            this.cbSrcDomain.TabIndex = 15;
+            this.cbSrcDomain.Text = "SrcDomain";
+            this.cbSrcDomain.UseVisualStyleBackColor = true;
+            this.cbSrcDomain.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
+            // cbDesIp
+            // 
+            this.cbDesIp.AutoSize = true;
+            this.cbDesIp.Checked = true;
+            this.cbDesIp.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbDesIp.Location = new System.Drawing.Point(742, 26);
+            this.cbDesIp.Name = "cbDesIp";
+            this.cbDesIp.Size = new System.Drawing.Size(56, 16);
+            this.cbDesIp.TabIndex = 16;
+            this.cbDesIp.Text = "DesIp";
+            this.cbDesIp.UseVisualStyleBackColor = true;
+            this.cbDesIp.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
+            // cbDesMac
+            // 
+            this.cbDesMac.AutoSize = true;
+            this.cbDesMac.Checked = true;
+            this.cbDesMac.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbDesMac.Location = new System.Drawing.Point(839, 26);
+            this.cbDesMac.Name = "cbDesMac";
+            this.cbDesMac.Size = new System.Drawing.Size(71, 16);
+            this.cbDesMac.TabIndex = 17;
+            this.cbDesMac.Text = "DesMac";
+            this.cbDesMac.UseVisualStyleBackColor = true;
+            this.cbDesMac.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
+            // cbDesDomain
+            // 
+            this.cbDesDomain.AutoSize = true;
+            this.cbDesDomain.Checked = true;
+            this.cbDesDomain.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbDesDomain.Location = new System.Drawing.Point(961, 26);
+            this.cbDesDomain.Name = "cbDesDomain";
+            this.cbDesDomain.Size = new System.Drawing.Size(89, 16);
+            this.cbDesDomain.TabIndex = 18;
+            this.cbDesDomain.Text = "DesDomain";
+            this.cbDesDomain.UseVisualStyleBackColor = true;
+            this.cbDesDomain.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
+            // cbLength
+            // 
+            this.cbLength.AutoSize = true;
+            this.cbLength.Checked = true;
+            this.cbLength.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbLength.Location = new System.Drawing.Point(1079, 26);
+            this.cbLength.Name = "cbLength";
+            this.cbLength.Size = new System.Drawing.Size(62, 16);
+            this.cbLength.TabIndex = 19;
+            this.cbLength.Text = "Length";
+            this.cbLength.UseVisualStyleBackColor = true;
+            this.cbLength.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
+            // cbURI
+            // 
+            this.cbURI.AutoSize = true;
+            this.cbURI.Checked = true;
+            this.cbURI.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbURI.Location = new System.Drawing.Point(1161, 26);
+            this.cbURI.Name = "cbURI";
+            this.cbURI.Size = new System.Drawing.Size(43, 16);
+            this.cbURI.TabIndex = 20;
+            this.cbURI.Text = "URI";
+            this.cbURI.UseVisualStyleBackColor = true;
+            this.cbURI.CheckedChanged += new System.EventHandler(this.col_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1526, 518);
+            this.Controls.Add(this.cbURI);
+            this.Controls.Add(this.cbLength);
+            this.Controls.Add(this.cbDesDomain);
+            this.Controls.Add(this.cbDesMac);
+            this.Controls.Add(this.cbDesIp);
+            this.Controls.Add(this.cbSrcDomain);
+            this.Controls.Add(this.cbSrcMac);
+            this.Controls.Add(this.cbSrcIp);
+            this.Controls.Add(this.cbTime);
+            this.Controls.Add(this.cbNo);
             this.Controls.Add(this.lblPb);
             this.Controls.Add(this.pbState);
             this.Controls.Add(this.txtDialog);
@@ -277,7 +427,7 @@
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Form1";
-            this.Text = "WaShark-WaShark";
+            this.Text = "WaShark-WaShark 1.0 ver";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -315,6 +465,16 @@
         private System.Windows.Forms.RichTextBox txtDialog;
         private System.Windows.Forms.ProgressBar pbState;
         private System.Windows.Forms.Label lblPb;
+        private System.Windows.Forms.CheckBox cbNo;
+        private System.Windows.Forms.CheckBox cbTime;
+        private System.Windows.Forms.CheckBox cbSrcIp;
+        private System.Windows.Forms.CheckBox cbSrcMac;
+        private System.Windows.Forms.CheckBox cbSrcDomain;
+        private System.Windows.Forms.CheckBox cbDesIp;
+        private System.Windows.Forms.CheckBox cbDesMac;
+        private System.Windows.Forms.CheckBox cbDesDomain;
+        private System.Windows.Forms.CheckBox cbLength;
+        private System.Windows.Forms.CheckBox cbURI;
     }
 }
 

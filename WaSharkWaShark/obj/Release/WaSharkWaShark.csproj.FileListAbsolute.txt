@@ -1,0 +1,14 @@
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\bin\Release\WaSharkWaShark.exe.config
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\bin\Release\WaSharkWaShark.exe
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\bin\Release\WaSharkWaShark.pdb
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\bin\Release\Newtonsoft.Json.dll
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\bin\Release\Newtonsoft.Json.xml
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\obj\Release\WaSharkWaShark.csprojAssemblyReference.cache
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\obj\Release\WaSharkWaShark.Form1.resources
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\obj\Release\WaSharkWaShark.Form2.resources
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\obj\Release\WaSharkWaShark.Properties.Resources.resources
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\obj\Release\WaSharkWaShark.csproj.GenerateResource.cache
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\obj\Release\WaSharkWaShark.csproj.CoreCompileInputs.cache
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\obj\Release\WaSharkWaShark.csproj.CopyComplete
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\obj\Release\WaSharkWaShark.exe
+C:\Users\KimSuHeon\source\repos\npole0103\WaSharkWaShark\WaSharkWaShark\obj\Release\WaSharkWaShark.pdb
